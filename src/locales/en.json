@@ -1,0 +1,3240 @@
+{
+  "title": "Title in english",
+  "greeting-morning": "Good morning",
+  "greeting-evening": "Good evening",
+  "greeting-afternoon": "Good afternoon",
+  "export-text": "Export data",
+  "data-term-text": "Data/Terms",
+  "title-info-text": "Welcome to your Dashboard.",
+  "data-range-shown-text": " Data shown for date range :",
+  "total-jobs-text": "TOTAL JOBS",
+  "total-invites-text": "Total Invites Sent",
+  "test-purchased-text": "Number Of Tests Purchased",
+  "test-performed": "Number Of Tests Performed",
+
+  "dashboard-text": "Dashboard",
+  "my-profile-text": "My Profile",
+  "account-text": "Accounts",
+  "loading-text": "Loading...",
+  "logging-out-text": "Logging Out..",
+  "log-out-text": "Log Out",
+  "jobs-text": "Jobs",
+  "candidate-text": "Candidates",
+  "result-text": "Results",
+  "compare-text": "Compare",
+  "report-template-text": "Report Templates",
+  "invite-candidate": "Invite Candidate",
+  "for-job-text": "for job -",
+  "invite-name-text": "Name",
+  "invite-email-text": "Email",
+
+  "Purchase-test": "Purchase Tests",
+  "Enter-qun.-to-purchase": "Enter quantity to purchase",
+  "Enter-qty.": "Enter Qty",
+  "table-testpurchades-text": "Test Purchased",
+
+  "add-job-text": "Add Job",
+  "purchase-tests-text": "Purchase Tests",
+  "jobs-title-info-text": "Here you can view, deactivate and manage jobs.",
+  "product-name-text": "Product Name",
+  "price-text": "Price",
+  "quantity-text": "Qty",
+  "total-text": "Total",
+
+  "back-to-jobs-text": "Back to all jobs",
+  "save-change-button-text": "Save Changes",
+  "job-details-text": "Job Details",
+  "add-parameter-text": "Add Skills",
+  "search-by-job-name-text": "Search by name or job",
+  "job-name-text": "Job Name",
+  "search-job-text": "Search job",
+  "organisation-unit-text": "Organisation unit",
+  "education-level-text": "Education level",
+  "job-id-text": "Job ID",
+  "country-text": "Country",
+  "city-text": "City",
+  "parameters-text": "Skills",
+  "delete-year-text": "Are you sure",
+  "delete-year-confirm-text": "Are you sure you want to delete this year?",
+
+  "new-param-text": "New Parameter",
+  "save-button-label-text": "Save",
+  "param-details-text": "Param Details",
+  "param-name-text": "Name",
+  "param-description-text": "Description",
+
+  "go-back-button": "Go back",
+
+  "back-to-candidate-text": "Back to all candidates",
+  "candidate-detail-text": "Candidate Details",
+
+  "add-invite-text": "Add invite text",
+
+  "submit-bttn-text": "Submit",
+  "title-info-result": "Here you can view results.",
+
+  "search_candidate_text": "Search Candidate",
+  "add-candidate-text": "Add Candidate",
+  "import-candidate-text": "Import Candidates",
+  "download-sample-text": "Download Sample",
+  "title-managecandidate-text": "Here you can view, deactivate and manage candidates.",
+
+  "name-text": "Name",
+  "email-text": "Email",
+  "email-address": "Email Address",
+  "password-text": "Password",
+  "phone-text": "Phone",
+  "profession-text": "Profession",
+  "experience-text": "Experience",
+  "education-text": "Education",
+  "candidates-to-import": "Candidates to import",
+  "company-name-text": "Company Name",
+  "company-id": "Company ID",
+  "company-ein": "Company EIN",
+  "company-phone-number": "Company Phone Number",
+  "phone-number-optional": "Phone Number*",
+
+  "street-address": "Street Address",
+
+  "zip-code-text": "Zip Code",
+  "are-you-sure-text": "Are you sure?",
+
+  "navbar-option-home": "Home",
+  "navbar-option-home2": "What we do",
+  "navbar-option-home3": "How does it work?",
+  "navbar-option-home4": "Graphoanalysis",
+  "navbar-option-home5": "Pricing",
+  "navbar-option-home6": "Contact",
+  "login": "Login",
+  "signup": "Go to App",
+  "btn_recAi": "Recruiters AI",
+  "test-word": "Automated graphoanalysis ",
+  "test-word1": " personality test",
+  "p-small-text": "An innovative tool to assess your candidates quickly,",
+  "p-small-text1": "effectively and without any bias.",
+  "system": "Our System",
+  "system-heading": "What we do",
+  "system-first-para": "We conduct automated graphoanalysis aimed at assessing the profile",
+  "system-first-para1": "of candidates in recruitment, selection and internal promotion processes.",
+  "system-first-para2": "Our system analyzes the candidate's personality within a work context, via a detailed and automated examination of their personal handwriting.",
+  "system-first-para3": "Our software is capable of measuring detailed and specific features of handwritten text, such as the distance between words, the writing inclination, among many other metrics that result in an exhaustive and comprehensive personality analysis, supported by the expert knowledge of specialists in the matter.",
+  "system-first-para4": "We have developed this assessment to provide a robust tool for recruiters looking to automate the processing of large numbers of candidates or looking to gain an in-depth insight into the personality aspects of a candidate for a critical position. The test is not susceptible to misrepresentation and is highly assertive.",
+  "process": "Process",
+  "process-heading": "How does it work?",
+  "step-one": "Step One",
+  "step-one-value": "Registration of Candidate information",
+  "step-two": "Step-Two",
+  "step-two-value": "The candidate's handwriting samples are received digitally.",
+  "step-three": "Step Three",
+  "step-three-value": "Automated analysis of the sample is conducted.",
+  "step-four": "Step Four ",
+  "step-four-value": "The results of each candidate's test are delivered digitally.",
+  "graphoanalysis": "Graphoanalysis",
+  "graphoanalysis-heading": "Aspects analyzed",
+  "intellectual-self": "Intellectual-Self",
+  "intellectual-self-list1": "Clarity of thought ",
+  "intellectual-self-list2": "Flexibility in thinking ",
+  "intellectual-self-list3": "Creativity capacity for problem solving ",
+  "intellectual-self-list4": "Capacity for innovation",
+  "intellectual-self-list5": "Predominance of logical vs. emotional processes ",
+  "intellectual-self-list6": "Order in thought processes ",
+  "intellectual-self-list7": "Capacity for analysis ",
+  "intellectual-self-list8": "Orientation to detail",
+  "intellectual-self-list9": "Level of concentration",
+  "intellectual-self-list10": "Mental agility",
+  "intellectual-self-list11": "Practical vs. theoretical thinking",
+  "intellectual-self-list12": "Organizational capacity ",
+  "intellectual-self-list13": "Common sense",
+  "affective-self": "Affective-Self",
+  "affective-self-list1": "Emotional maturity",
+  "affective-self-list2": "Emotional stability ",
+  "affective-self-list3": "Impulse control and self-control",
+  "affective-self-list4": "Self-esteem",
+  "affective-self-list5": "Self-concept",
+  "affective-self-list6": "Level of self-confidence",
+  "affective-self-list7": "Adequacy of self-image",
+  "affective-self-list8": "Adaptability and flexibility in the face of the",
+  "affective-self-list9": "environment Character qualities",
+  "interpersonal-self": "Interpersonal-Self",
+  "interpersonal-self-list1": "Social Adequacy",
+  "interpersonal-self-list2": "Social Integration",
+  "interpersonal-self-list3": "Assertiveness",
+  "interpersonal-self-list4": "Empathy",
+  "interpersonal-self-list5": "Diplomacy",
+  "interpersonal-self-list6": " Extroversion / Introversion",
+  "interpersonal-self-list7": "Ability to work in a team",
+  "interpersonal-self-list8": "Warmth or coldness",
+  "interpersonal-self-list9": "Degree of orientation towards people",
+  "interpersonal-self-list10": "Communicational ability",
+  "interpersonal-self-list11": "Degree of harmony with the environment",
+  "interpersonal-self-list12": "Ease or difficulty in social contact",
+  "interpersonal-self-list13": "Level of sociability",
+  "work-self": "Work-Self",
+  "work-self-list1": " Level of energy put into work",
+  "work-self-list2": " Ability to make decisions",
+  "work-self-list3": "Leadership",
+  "work-self-list4": "Communicational level",
+  "work-self-list5": "Practical capacity",
+  "work-self-list6": "Adherence to rules and procedures",
+  "work-self-list7": "Capacity for Organization and Planning",
+  "work-self-list8": "Stability in work performance",
+  "work-self-list9": "Orientation towards routine vs. creative tasks ",
+  "work-self-list10": "Initiative level",
+  "work-self-list11": "Achievement motivation ",
+  "work-self-list12": "Orientation towards objectives",
+  "work-self-list13": "Level of responsibility",
+  "effective_method": "An effective method",
+  "effective_method-heading": "The Value of Graphoanalysis",
+  "effective_method-para1": "Graphoanalysis assessment can help employers obtain a comprehensive personality profile of the candidate that cannot be found using other assessment methods. The Company is able obtain a detailed description of the candidate's personality, which will allow making the best hiring decisions, according to their fit with what is required for the position and the organizational culture of the Company.",
+  "effective_method-para2": "Graphoanalysis can be used for the assessment of candidates within various levels within the organizational structure: operational, administrative, professional, middle management and executive positions.",
+  "first-test": "Get your First Test for Free!",
+  "first-test-heading": "They already know its benefits!",
+  "first-test-para1": "The template is really nice and offers quite a large set of options. It's beautiful and the coding is done quickly and seamlessly. Thank you!",
+  "Devon-Lane": "Devon Lane",
+  "HR": "HR Officer, Company",
+  "advantages": "Advantages and Benefits",
+  "benefits": "Benefits",
+  "benefits-list1": "Obtain a comprehensive personality analysis of your candidates.",
+  "benefits-list2": " Significant cost savings for hiring companies.",
+  "benefits-list3": " Savings in hiring times.",
+  "benefits-list4": " Over X accuracy in analysis results.",
+  "benefits-list5": "Results oriented to the relevant personality traits within a work context.",
+  "benefits-list6": " 100% remote process.",
+  "benefits-list7": " Results within hours of receiving handwriting samples.",
+  "benefits-list8": " Enables batch analysis of candidates.",
+  "benefits-list9": " Reduction of candidate anxiety levels, related to the evaluative context.",
+  "psychometric-tests": "vs Other Psychometric",
+  "psychometric-tests-span": " Tests",
+  "psychometric-tests1": "Allows to reduce anxiety during the assessment.",
+  "psychometric-tests2": " Handwriting is difficult to falsify, since it involves factors acquired naturally throughout its development.",
+  "psychometric-tests3": " Control is usually more oriented to the content than the handwriting morphology, which actually is the basis for the analysis.",
+  "psychometric-tests4": " It is unique to each person",
+  "send-us-msg": "send us a message",
+  "contact": "Contact",
+  "name": "Name",
+  "first-name": "First Name",
+  "last-name": "Last Name",
+  "e-mail": "E-mail",
+  "subject": "Subject",
+  "mobile": "Mobile (optional)",
+  "message": "Message",
+  "submit": "By submitting I hereby accept the use and privacy policies.",
+  "send-your-msg": "send your message",
+  "privacy": "Privacy & Cookie Policy | Terms of Service",
+  "copyright": "Designed by CU, Programmed by Agency X © Copyright 2022. Recruiters AI",
+  "try-free": "<p>Try It</p><h6>For Free</h6>",
+  "prueba": "Try It",
+  "sin-costo": "For Free",
+  "candidate-select-compare": "Select Candidates to compare",
+  "sent-successfully": "Thank you for contacting us, your message has been sent successfully.",
+  "deactivate-button-text": "Deactivate Account",
+  "account-subtitle-text": "Here you can view your transactions and deactivate your account",
+  "purchasetest-button-text": "Purchase test",
+  "table-testpurchades-text": "Test Purchased",
+  "table-date-text": "Date",
+  "table-amount-text": "Amount",
+  "table-status-text": "Status",
+
+  "jobs-table-name-text": "Name",
+  "jobs-table-organisation-text": "Organisation Unit",
+  "jobs-table-education-text": "Education",
+  "table-jobid-text": "job ID",
+
+  "result-table-jobname-text": "Job name",
+  "result-table-name-text": "Name",
+  "result-table-inviteID-text": "Invite ID",
+  "result-table-jobID-text": "job ID",
+  "result-table-score-text": "Score",
+  "parameters-select-text": "Select skills to comapre",
+  "search-text": "Search",
+  "search-job": "Search job",
+  "job-name-description-text": "Name - Description",
+  "job-value-text": "Value",
+
+  "verification-text": "A verification link has been sent to your email",
+  "click-on-link-text": "Please click on the link that has been sent to your email to verify it and continue with the registration process.",
+  "logIn-text": "Log in!",
+
+  "candidate_text_report": "Candidate Name:",
+  "mobile_text_report": "Mobile:",
+  "profession_text_report": "Profession:",
+  "experience_text_report": "Years of experience:",
+  "education_text_report": "Educational level:",
+  "number_text_report": " Match numbers:",
+  "report_text_report": "Report No.",
+  "date_text_report": "Date",
+  "charge_text_report": "Charge ID:",
+  "job_title_report": "Job title:",
+  "page_text_report": "Page:",
+  "report_text_report_down": "Graphoanalysis Report",
+  "position_text_report": "Match with the position",
+  "intellectual_text_report": "Intellectual Dimension",
+  "affective_heading": "Affective Dimension",
+  "relational_heading": "Relational Dimension",
+  "laboral_heading": "Labor Dimensions",
+  "outstanding_heading": "Outstanding",
+  "analysed_text": "Competencies Analyzed",
+  "creativity_text": "Creativity",
+  "proactivity_text": "Proactivity",
+  "organization_text": "Organization",
+  "desired_text": "Desired",
+  "obtain_text": "Obtained",
+
+
+  "emotional": {
+    "legibility": {
+      "illegiblie": [
+        {
+          "interpretation": "The candidate has a general psychological context that is moderately unstable and may involve difficulties in their adaptation and emotional control. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate has a general psychological context that is moderately unstable and may involve difficulties in their adaptation and emotional control. ",
+          "highlight": "Moderate general psychological context.",
+          "value": "Moderate",
+          "skill": "Emotional stability and impulse control"
+        }
+      ],
+
+      "legible": [
+        {
+          "interpretation": "The candidate shows a healthy general psychological context, showing an adequate emotional stability and self-control.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a healthy general psychological context, showing an adequate emotional stability and self-control.",
+          "highlight": "Adequate emotional stability and self-control.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        }
+      ]
+    },
+
+    "black_pixel_percentage": {
+      "white_domain": [
+        {
+          "interpretation": "Tends to be a person with a high reflection level, with an moderate level of expression and spontaneity. In this sense, the candidate has a high level of control on their behavior and their interpersonal contact levels. This is a person that thinks things through before expressing them.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Tends to be a person with a high reflection level, with an moderate level of expression and spontaneity. In this sense, the candidate has a high level of control on their behavior and their interpersonal contact levels. This is a person that thinks things through before expressing them.",
+          "highlight": "High control on their behavior and interpersonal contact levels.",
+          "value": "High",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "Tends to be a person with a high reflection level, with an moderate level of expression and spontaneity. In this sense, the candidate has a high level of control on their behavior and their interpersonal contact levels. This is a person that thinks things through before expressing them.",
+          "highlight": "High reflection level.",
+          "value": "High",
+          "skill": "Reflective thinking"
+        },
+        {
+          "interpretation": "Tends to be a person with a high reflection level, with an moderate level of expression and spontaneity. In this sense, the candidate has a high level of control on their behavior and their interpersonal contact levels. This is a person that thinks things through before expressing them.",
+          "highlight": "Moderate expression and spontaneity level.",
+          "value": "Moderate",
+          "skill": "Energy level"
+        }
+      ],
+
+      "black_domain": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "text_stability": {
+      "irregular_handwriting": [
+        {
+          "interpretation": "A moderate predominance of emotions over reason is observed in the candidate, and they may have fluctuations in willpower. In this sense, they may present themselves as a person who can be influenced by others or by the emotional context in which they develop.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "A moderate dominance of emotions over reason is observed in the candidate, and they may have fluctuations in willpower. In this sense, they may present themselves as a person who can be influenced by others or by the emotional context in which they develop. ",
+          "highlight": "Moderate dominance of emotion over reason.",
+          "value": "Moderate",
+          "skill": "Emotional stability and impulse control"
+        }
+      ],
+
+      "regular_handwriting": [
+        {
+          "interpretation": "The candidate has an adequate domain of their will, exhibiting high emotional stability and maturity. The person shows high consistency both in their ideas as well as in their emotions.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate has an adequate will power, exhibiting high emotional stability and maturity. The person shows high consistency both in their ideas as well as in their emotions.",
+          "highlight": "Adequate will power.",
+          "value": "Adequate",
+          "skill": "Self-control"
+        },
+        {
+          "interpretation": "The candidate has an adequate will power, exhibiting high emotional stability and maturity. The person shows high consistency both in their ideas as well as in their emotions.",
+          "highlight": "High consistency in their ideas and emotions.",
+          "value": "High",
+          "skill": "Personality maturity"
+        },
+        {
+          "interpretation": "The candidate has an adequate will power, exhibiting high emotional stability and maturity. The person shows high consistency both in their ideas as well as in their emotions.",
+          "highlight": "High emotional stability and maturity.",
+          "value": "High",
+          "skill": "Emotional stability and impulse control"
+        }
+      ]
+    },
+
+    "seperation_between_the_words": {
+      "correct_separation_between_words": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "long_separation_between_words": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "short_separation_between_words": [
+        {
+          "interpretation": "The candidate shows high self-control.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+       
+      "seperation_between_the_letters" : {
+
+      "correct_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "long_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "short_separation_between_letters": [
+        {
+          "interpretation": "In conjunction with other indicators, it may be indicative of a depressive state.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "proportionality_ratio": {
+      "correct_proportion": [
+        {
+          "interpretation": "Emotionally, the candidate shows high integrity, prudence and caution levels. Shows an adequate self-control.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows high integrity, prudence and caution levels. Shows an adequate self-control.",
+          "highlight": "Adequate self-control.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows high integrity, prudence and caution levels. Shows an adequate self-control.",
+          "highlight": "High level of integrity, prudence and caution.",
+          "value": "High",
+          "skill": "Integrity"
+        }
+      ],
+      "tall_proportion": [
+        {
+          "interpretation": "Emotionally, the candidate shows a high sense of pride regarding themselves and their abilities. Even though they may come off as vain regarding the same. The candidate shows a high need for independence.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows a high sense of pride regarding themselves and their abilities. Even though they may come off as vain regarding the same. The candidate shows a high need for independence.",
+          "highlight": "High need for independence.",
+          "value": "High",
+          "skill": "Independence"
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows a high sense of pride regarding themselves and their abilities. Even though they may come off as vain regarding the same. The candidate shows a high need for independence.",
+          "highlight": "High sense of pride.",
+          "value": "High",
+          "skill": "Self-esteem"
+        }
+      ],
+      "wide_proportion": [
+        {
+          "interpretation": "The candidate has a high expansion and open character. A high level of honesty, spontaneity and self-confidence is observed.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate has a high expansion and open character. A high level of honesty, spontaneity and self-confidence is observed.",
+          "highlight": "Adequate level of honesty, spontaneity and self-confidence.",
+          "value": "Adequate",
+          "skill": "Integrity"
+        }
+      ]
+    },
+    "size": {
+      "correct_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "large_size": [
+        {
+          "interpretation": "The person shows a tendency towards extroversion, exhibiting a high concept of themselves. They exhibit a high energy level and vitality.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The person shows a tendency towards extroversion, exhibiting a high concept of themselves. They exhibit a high energy and vitality level.",
+          "highlight": "High self-concept.",
+          "value": "High",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "The person shows a tendency towards extroversion, exhibiting a high concept of themselves. They exhibit a high energy and vitality level.",
+          "highlight": "High energy and vitality level.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ],
+      "small_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_large_size": [
+        {
+          "interpretation": "They show a high concept of themselves, tending towards highly overrating their abilities and skills. The concept regarding themselves may be a bit exaggerated.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "They show a high concept of themselves, tending towards highly overrating their abilities and skills. The concept regarding themselves may be a bit exaggerated.",
+          "highlight": "High overrating of their abilities.",
+          "value": "High",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "They show a high concept of themselves, tending towards highly overrating their abilities and skills. The concept regarding themselves may be a bit exaggerated.",
+          "highlight": "High overrating of their abilities.",
+          "value": "High",
+          "skill": "Self-esteem"
+        }
+      ],
+      "very_small_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size_regularity": {
+      "irregular": [
+        {
+          "interpretation": "The candidate shows a predominance of feeling and intuition. They are an highly adaptable, spontaneous and versatile person, but may show a limited ability for self-control.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a predominance of feeling and intuition. They are an highly adaptable, spontaneous and versatile person, but may show a limited self-control.",
+          "highlight": "High levels of adaptation, spontaneity and versatility.",
+          "value": "High",
+          "skill": "Adaptation ability"
+        },
+        {
+          "interpretation": "The candidate shows a predominance of feeling and intuition. They are an highly adaptable, spontaneous and versatile person, but may show a limited self-control.",
+          "highlight": "Limited self-control.",
+          "value": "Limited",
+          "skill": "Emotional stability and impulse control"
+        }
+      ],
+      "regular": [
+        {
+          "interpretation": "The candidate shows an adequate emotional stability. They usually appear as a mature and consistent person. They are highly reliable.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows an adequate emotional stability. They usually appear as a mature and consistent person. They are highly reliable.",
+          "highlight": "Adequate emotional stability.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        }
+      ]
+    },
+    "size_variability": {
+      "decreasing": [
+        {
+          "interpretation": "In conjunction with other traits, it able be indicative of a depressive state.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "increasing": [
+        {
+          "interpretation": "Emotionally, the candidate may show significant infantile traits and a certain naiveness degree. They tend to be highly spontaneous and honest, though very trusting in others. Occasionally, a limited empathy level can be observed.",
+          "highlight": "Highly spontaneous.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        },
+        {
+          "interpretation": "Emotionally, the candidate may show significant infantile traits and a certain naiveness degree. They tend to be highly spontaneous and honest, though very trusting in others. Occasionally, a limited empathy level can be observed.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the candidate may show significant infantile traits and a certain naiveness degree. They tend to be highly spontaneous and honest, though very trusting in others. Occasionally, a limited empathy level can be observed.",
+          "highlight": "Significant infantile traits.",
+          "value": "High",
+          "skill": "Personality maturity"
+        },
+        {
+          "interpretation": "Emotionally, the candidate may show significant infantile traits and a certain naiveness degree. They tend to be highly spontaneous and honest, though very trusting in others. Occasionally, a limited empathy level can be observed.",
+          "highlight": "Limited empathy levels.",
+          "value": "Limited",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+      "no_phenomenon": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "pressure": {
+      "correct_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "strong_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "soft_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "letter_tilt": {
+      "inclined_progressive": [
+        {
+          "interpretation": "",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In emotional terms, the candidate shows an adequate level of maturity, presenting themselves as a spontaneous and active person.",
+          "highlight": "Adequate maturity level.",
+          "value": "Adequate",
+          "skill": "Personality maturity"
+        }
+      ],
+      "inverted_regressive": [
+        {
+          "interpretation": "Person that is highly cautious and careful in all aspects of their life. They are guided by high moral standards built based on their own experience. The candidate is not influenced by the environment and, in general, likes solitude.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Person that is highly cautious and careful in all aspects of their life. They are guided by high moral standards built based on their own experience. The candidate is not influenced by the environment and, in general, likes solitude.",
+          "highlight": "High caution level.",
+          "value": "High",
+          "skill": "Caution"
+        },
+        {
+          "interpretation": " Person that is highly cautious and careful in all aspects of their life. They are guided by high moral standards built based on their own experience. The candidate is not influenced by the environment and, in general, likes solitude.",
+          "highlight": "High ethical standards.",
+          "value": "High",
+          "skill": "Integrity"
+        }
+      ],
+      "moderately_inclined": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "moderately_inverted": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight": [
+        {
+          "interpretation": " The candidate shows adequate emotional stability, and homogeneous mental states.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "speed": {
+      "correct_speed": [
+        {
+          "interpretation": "In emotional terms, the candidate has an adequate balance, showing stable mental states. Adequate ability for anxiety control.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In emotional terms, the candidate has an adequate balance, showing stable mental states. Adequate ability for anxiety control. ",
+          "highlight": "Adequate emotional balance.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "In emotional terms, the candidate has an adequate balance, showing stable mental states. Adequate ability for anxiety control.",
+          "highlight": "Adequate anxiety control.",
+          "value": "Adequate",
+          "skill": "Resistance to stress"
+        }
+      ],
+      "fast_speed": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "slow_speed": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "line_slope": {
+      "ascending_lines": [
+        {
+          "interpretation": "Emotionally, the candidate shows a highly optimistic character. High ability to resist difficult situations.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows a highly optimistic character. High ability to resist difficult situations.",
+          "highlight": "High ability to resist difficult situations.",
+          "value": "High",
+          "skill": "Resistance to stress"
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows a highly optimistic character. High ability to resist difficult situations.",
+          "highlight": "Highly optimistic.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ],
+      "descending_lines": [
+        {
+          "interpretation": "The candidate shows a certain tendency towards exhaustion, appearing as a low energy level person. This could be showing a high tendency towards discouragement and pessimism.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a certain tendency towards exhaustion, appearing as a low energy level person. This could be showing a high tendency towards discouragement and pessimism. ",
+          "highlight": "High tendency to discouragement and pessimism.",
+          "value": "High",
+          "skill": "Energy level"
+        },
+        {
+          "interpretation": "The candidate shows a certain tendency towards exhaustion, appearing as a low energy level person. This could be showing a high tendency towards discouragement and pessimism. ",
+          "highlight": "Low energy level.",
+          "value": "Limited",
+          "skill": "Energy level"
+        }
+      ],
+      "horizontal_lines": [
+        {
+          "interpretation": "The candidate shows an uniform and stable mood, observing an adequate level of emotional control. No major oscillations are observed. Has an adequate ability to withstand emotionally complex situations.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows an uniform and stable mood, observing an adequate level of emotional control. No major oscillations are observed. Has an adequate ability to withstand emotionally complex situations.",
+          "highlight": "Adequate ability to face emotionally complex situations.",
+          "value": "Adequate",
+          "skill": "Management of complex situations"
+        },
+        {
+          "interpretation": "The candidate shows an uniform and stable mood, observing an adequate level of emotional control. No major oscillations are observed. Has an adequate ability to withstand emotionally complex situations.",
+          "highlight": "Adequate level of emotional self-control.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        }
+      ],
+      "very_ascending_lines": [
+        {
+          "interpretation": "The candidate shows a high tendency towards manic states and generalized alteration.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a high tendency towards manic states and generalized alteration.",
+          "highlight": "High tendency towards manic states.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ],
+      "very_descending_lines": [
+        {
+          "interpretation": "The candidate exhibits high discouragement states which are crystallized into a depressive personality. This trait impacts both the work and relational aspects.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate exhibits high discouragement states which are crystallized into a depressive personality. This trait impacts both the work and relational aspects.",
+          "highlight": "High discouragement.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ]
+    },
+    "shape": {
+      "curved": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight_angled": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "signature_position": {
+      "center": [
+        {
+          "interpretation": "The candidate shows an adequate affection control level, showing independence both in ideas and affections. Centered person. Difficulty in evolving towards maturity.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows an adequate affection control level, showing independence both in ideas and affections. Centered person. Difficulty in evolving towards maturity.",
+          "highlight": "Adequate affection control.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "The candidate shows an adequate affection control level, showing independence both in ideas and affections. Centered person. Difficulty in evolving towards maturity.",
+          "highlight": "High independence.",
+          "value": "High",
+          "skill": "Independence"
+        }
+      ],
+      "left": [
+        {
+          "interpretation": "Emotionally, they are a person with a limited tolerance to frustration. In the face of problematic situations, they may get somewhat paralyzed. Limited self-confidence levels are observed. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, they are a person with a limited tolerance to frustration. In the face of problematic situations, they may get somewhat paralyzed. Limited self-confidence levels are observed. ",
+          "highlight": "Limited tolerance to frustration.",
+          "value": "Limited",
+          "skill": "Tolerance to frustration"
+        },
+        {
+          "interpretation": "Emotionally, they are a person with a limited tolerance to frustration. In the face of problematic situations, they may get somewhat paralyzed. Limited self-confidence levels are observed. ",
+          "highlight": "Limited self-confidence level.",
+          "value": "Limited",
+          "skill": "Self-esteem"
+        }
+      ],
+      "right": [
+        {
+          "interpretation": " Emotionally, the candidate shows a cheerful and optimistic mood, with an adequate level of self-confidence.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": " Emotionally, the candidate shows a cheerful and optimistic mood, with an adequate level of self-confidence.",
+          "highlight": "Adequate self-confidence level.",
+          "value": "Adequate",
+          "skill": "Self-confidence"
+        },
+        {
+          "interpretation": " Emotionally, the candidate shows a cheerful and optimistic mood, with an adequate level of self-confidence.",
+          "highlight": "High optimism and cheer levels.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ]
+    },
+    "signature_distance_to_text": {
+      "far_distance": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "correct_distance": [
+        {
+          "interpretation": "Emotionally, the candidate is observed to be in an adequate agreement between what they want to achieve and the capabilities they have to achieve it, showing an adequate balance and healthy self-esteem.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the candidate is observed to be in an adequate agreement between what they want to achieve and the capabilities they have to achieve it, showing an adequate balance and healthy self-esteem.",
+          "highlight": "Adequate agreement between their goals and the abilities required.",
+          "value": "Adequate",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "Emotionally, the candidate is observed to be in an adequate agreement between what they want to achieve and the capabilities they have to achieve it, showing an adequate balance and healthy self-esteem.",
+          "highlight": "Adequate self-esteem balance.",
+          "value": "Adequate",
+          "skill": "Self-esteem"
+        }
+      ],
+      "near_distance": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "illegible_signature": [
+        {
+          "interpretation": "Emotionally, the person shows a complex structure, with a tendency to deploy many defense mechanisms, which hinders their ability to realistically observe both aspects of themselves and the situations they face. Has a high tendency towards conflict with the environment and themselves. In general terms, they seek personal identification, that is own and different, detached from traditionally expected images. Somewhat insecure, choosing to remain hidden.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the person shows a complex structure, with a tendency to deploy many defense mechanisms, which hinders their ability to realistically observe both aspects of themselves and the situations they face. Has a high tendency towards conflict with the environment and themselves. In general terms, they seek personal identification, that is own and different, detached from traditionally expected images. Somewhat insecure, choosing to remain hidden.",
+          "highlight": "High tendency towards conflict with the environment and themselves.",
+          "value": "High",
+          "skill": "Personality maturity"
+        }
+      ],
+      "legible_signature": [
+        {
+          "interpretation": "Emotionally, the candidate shows a high level of maturity, with a simple and reliable structure.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Emotionally, the candidate shows a high level of maturity, with a simple and reliable structure.",
+          "highlight": "High maturity level.",
+          "value": "High",
+          "skill": "Personality maturity"
+        }
+      ]
+    }
+  },
+
+  "intellectual": {
+    "legibility": {
+      "illegiblie": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "legible": [
+        {
+          "interpretation": "Has high clarity in reasoning",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Has high clarity in reasoning",
+          "highlight": "High reasoning clarity.",
+          "value": "High",
+          "skill": "Clarity of thought"
+        }
+      ]
+    },
+
+    "black_pixel_percentage": {
+      "white_domain": [
+        {
+          "interpretation": "Intellectually, they have a high level of abstraction which enables the candidate to project and program in the short, medium and long terms.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Intellectually, they have a high level of abstraction which enables the candidate to project and program in the short, medium and long terms.",
+          "highlight": "High abstraction level.",
+          "value": "High",
+          "skill": "Abstract thinking"
+        }
+      ],
+
+      "black_domain": [
+        {
+          "interpretation": "The candidate shows moderate objectivity levels, exhibiting certain difficulties to keep their distance and see situations in a global view. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows moderate objectivity levels, exhibiting certain difficulties to keep their distance and see situations in a global view.",
+          "highlight": "Moderate objectivity levels.",
+          "value": "Moderate",
+          "skill": "Clarity of thought"
+        }
+      ]
+    },
+    "text_stability": {
+      "irregular_handwriting": [
+        {
+          "interpretation": "It is important to note that they have intuitive thinking and high improvisation skills. High levels of versatility, creativity and imagination.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "It is important to note that they have intuitive thinking and high improvisation skills. High levels of versatility, creativity and imagination.",
+          "highlight": "High improvisation ability.",
+          "value": "High",
+          "skill": "Creativity"
+        },
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "regular_handwriting": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+
+    "seperation_between_the_words": {
+      "correct_separation_between_words": [
+        {
+          "interpretation": "The candidate shows an adequate level of mental agility, being able to reason adequately. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows an adequate level of mental agility, being able to reason adequately.",
+          "highlight": "Adequate mental agility.",
+          "value": "Adequate",
+          "skill": "Solving intellectual problems"
+        },
+        {
+          "interpretation": "The candidate shows an adequate level of mental agility, being able to reason adequately.",
+          "highlight": "Adequate reasoning.",
+          "value": "Adequate",
+          "skill": "Reflective thinking"
+        }
+      ],
+      "long_separation_between_words": [
+        {
+          "interpretation": "Intellectually, they out stand as a highly reflective person. Has a high abstraction level that enables them to project and schedule issues in the short, medium and long terms.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Intellectually, they out stand as a highly reflective person. Has a high abstraction level that enables them to project and schedule issues in the short, medium and long terms.",
+          "highlight": "High abstraction level.",
+          "value": "High",
+          "skill": "Abstract thinking"
+        },
+        {
+          "interpretation": "Intellectually, they out stand as a highly reflective person. Has a high abstraction level that enables them to project and schedule issues in the short, medium and long terms.",
+          "highlight": "Highly reflective.",
+          "value": "High",
+          "skill": "Reflective thinking"
+        }
+      ],
+
+      "short_separation_between_words": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+
+    "seperation_between_the_letters": {
+
+      "correct_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "long_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "short_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "proportionality_ratio": {
+      "correct_proportion": [
+        {
+          "interpretation": "The candidate shows a thinking style that is highly influenced by reason. High objectivity and impartiality level. They have abilities for abstract and theoretical comprehension, showing an adequate critical analysis ability. Low orientation to creative abilities.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a thinking style that is highly influenced by reason. High objectivity and impartiality level. They have abilities for abstract and theoretical comprehension, showing an adequate critical analysis ability. Low orientation to creative abilities.",
+          "highlight": "Adequate ability for critical analysis.",
+          "value": "",
+          "skill": "Analytical thinking"
+        },
+        {
+          "interpretation": "The candidate shows a thinking style that is highly influenced by reason. High objectivity and impartiality level. They have abilities for abstract and theoretical comprehension, showing an adequate critical analysis ability. Low orientation to creative abilities.",
+          "highlight": "High objectivity and impartiality level.",
+          "value": "",
+          "skill": "Clarity of thought"
+        },
+        {
+          "interpretation": "The candidate shows a thinking style that is highly influenced by reason. High objectivity and impartiality level. They have abilities for abstract and theoretical comprehension, showing an adequate critical analysis ability. Low orientation to creative abilities.",
+          "highlight": "Thinking highly influenced by reason.",
+          "value": "",
+          "skill": "Reflective thinking"
+        }
+      ],
+      "tall_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "wide_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size": {
+      "correct_size": [
+        {
+          "interpretation": "In relation to their intellectual ability, the candidate shows good balance between global and practical thinking. Has an adequate abstract ability, without ignoring the details involved.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relation to their intellectual ability, the candidate shows good balance between global and practical thinking. Has an adequate abstract ability, without ignoring the details involved.",
+          "highlight": "Adequate abstract ability without ignoring details involved.",
+          "value": "Adequate",
+          "skill": "Abstract thinking"
+        }
+      ],
+      "large_size": [
+        {
+          "interpretation": "The candidate shows a highly abstract thinking style, which enables global situational analysis. It is worth noting that, however, in occasions they may miss some details. They tend better to abstraction than to details comprising an analysis situation.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a highly abstract thinking style, which enables global situational analysis. It is worth noting that, however, in occasions they may miss some details. They tend better to abstraction than to details comprising an analysis situation.",
+          "highlight": "High abstract thinking.",
+          "value": "High",
+          "skill": "Abstract thinking"
+        }
+      ],
+      "small_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_large_size": [
+        {
+          "interpretation": "Highly global thinking style, which may make them miss the details and lose analysis accuracy. In this sense, they may have high difficulty concentrating.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Highly global thinking style, which may make them miss the details and lose analysis accuracy. In this sense, they may have high difficulty concentrating.",
+          "highlight": "High difficulty when concentrating.",
+          "value": "High",
+          "skill": "Concentration ability"
+        },
+        {
+          "interpretation": "Highly global thinking style, which may make them miss the details and lose analysis accuracy. In this sense, they may have high difficulty concentrating. ",
+          "highlight": "High global thinking.",
+          "value": "High",
+          "skill": "Abstract thinking"
+        }
+      ],
+      "very_small_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size_regularity": {
+      "irregular": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "regular": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size_variability": {
+      "decreasing": [
+        {
+          "interpretation": "The candidate shows an adequate domain of logical thinking and critical judgment. They have an adequate observation ability and need to go the root of situations or problems. High analysis ability.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows an adequate domain of logical thinking and critical judgment. They have an adequate observation ability and need to go the root of situations or problems. High analysis ability.",
+          "highlight": "Adequate observation ability.",
+          "value": "Adequate",
+          "skill": "Capacidad de observación"
+        },
+        {
+          "interpretation": "The candidate shows an adequate domain of logical thinking and critical judgment. They have an adequate observation ability and need to go the root of situations or problems. High analysis ability.",
+          "highlight": "Adequate domain of logical thinking.",
+          "value": "",
+          "skill": "Pensamiento lógico"
+        },
+        {
+          "interpretation": "The candidate shows an adequate domain of logical thinking and critical judgment. They have an adequate observation ability and need to go the root of situations or problems. High analysis ability.",
+          "highlight": "High analysis ability.",
+          "value": "High",
+          "skill": "Pensamiento analítico"
+        }
+      ],
+      "increasing": [
+        {
+          "interpretation": "Intellectually, the person may show a certain lack of logic and critical thinking, impacting their ability for analysis, which is limited.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Intellectually, the person may show a certain lack of logic and critical thinking, impacting their ability for analysis, which is limited.",
+          "highlight": "Limited analysis ability.",
+          "value": "Limited",
+          "skill": "Analytical thinking"
+        }
+      ],
+      "no_phenomenon": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "pressure": {
+      "correct_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "strong_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "soft_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "letter_tilt": {
+      "inclined_progressive": [
+        {
+          "interpretation": "",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "inverted_regressive": [
+        {
+          "interpretation": "In intellectual terms, they have an adequate abstraction ability.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In intellectual terms, they have an adequate abstraction ability.",
+          "highlight": "Adequate abstraction ability.",
+          "value": "Adequate",
+          "skill": "Abstract thinking"
+        }
+      ],
+      "moderately_inclined": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "moderately_inverted": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "speed": {
+      "correct_speed": [
+        {
+          "interpretation": "Possesses intellectual abilities within a moderate range, with an adequate combination of logical and intuitive thinking styles. In this sense, they exhibit a moderately flexible (theoretical and practical) and coherent thinking style. Their creativity and originality are at an moderate level, although they do demonstrate a high orientation towards realistic imagination, which enables them to perform tasks of a certain depth and provide new solutions to problems. The candidate has an adequate memory and an common sense.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Possesses intellectual abilities within a moderate range, with an adequate combination of logical and intuitive thinking styles. In this sense, they exhibit a moderately flexible (theoretical and practical) and coherent thinking style. Their creativity and originality are at an moderate level, although they do demonstrate a high orientation towards realistic imagination, which enables them to perform tasks of a certain depth and provide new solutions to problems. The candidate has an adequate memory and an common sense.",
+          "highlight": "Adequate combination of thinking styles, logical and intuitive.",
+          "value": "Adequate",
+          "skill": "Reflective thinking"
+        },
+        {
+          "interpretation": "Possesses intellectual abilities within a moderate range, with an adequate combination of logical and intuitive thinking styles. In this sense, they exhibit a moderately flexible (theoretical and practical) and coherent thinking style. Their creativity and originality are at an moderate level, although they do demonstrate a high orientation towards realistic imagination, which enables them to perform tasks of a certain depth and provide new solutions to problems. The candidate has an adequate memory and an common sense.",
+          "highlight": "Adequate memory and common sense.",
+          "value": "Adequate",
+          "skill": "Memory"
+        },
+        {
+          "interpretation": "Possesses intellectual abilities within a moderate range, with an adequate combination of logical and intuitive thinking styles. In this sense, they exhibit a moderately flexible (theoretical and practical) and coherent thinking style. Their creativity and originality are at an moderate level, although they do demonstrate a high orientation towards realistic imagination, which enables them to perform tasks of a certain depth and provide new solutions to problems. The candidate has an adequate memory and an common sense.",
+          "highlight": "Intellectual abilities in a moderate level.",
+          "value": "Moderate",
+          "skill": ""
+        },
+        {
+          "interpretation": "Possesses intellectual abilities within a moderate range, with an adequate combination of logical and intuitive thinking styles. In this sense, they exhibit a moderately flexible (theoretical and practical) and coherent thinking style. Their creativity and originality are at an moderate level, although they do demonstrate a high orientation towards realistic imagination, which enables them to perform tasks of a certain depth and provide new solutions to problems. The candidate has an adequate memory and an common sense.",
+          "highlight": "Moderate creativity and originality levels.",
+          "value": "Moderate",
+          "skill": "Creativity"
+        },
+        {
+          "interpretation": "Possesses intellectual abilities within a moderate range, with an adequate combination of logical and intuitive thinking styles. In this sense, they exhibit a moderately flexible (theoretical and practical) and coherent thinking style. Their creativity and originality are at an moderate level, although they do demonstrate a high orientation towards realistic imagination, which enables them to perform tasks of a certain depth and provide new solutions to problems. The candidate has an adequate memory and an common sense.",
+          "highlight": "Moderately flexible thinking.",
+          "value": "Moderate",
+          "skill": "Adaptation ability"
+        }
+      ],
+      "fast_speed": [
+        {
+          "interpretation": "Intellectually, the candidate shows high mental dynamism. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Intellectually, the candidate shows high mental dynamism. ",
+          "highlight": "High mental dynamism.",
+          "value": "High",
+          "skill": "Creativity"
+        }
+      ],
+      "slow_speed": [
+        {
+          "interpretation": "The candidate shows a high level of reflection thinking style that is more oriented to logic than intuition.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a high level of reflection thinking style that is more oriented to logic than intuition.",
+          "highlight": "Highly reflective.",
+          "value": "High",
+          "skill": "Reflective thinking"
+        }
+      ]
+    },
+    "line_slope": {
+      "ascending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "descending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "horizontal_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_ascending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_descending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "shape": {
+      "curved": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight_angled": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "signature_position": {
+      "center": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "left": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "right": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "signature_distance_to_text": {
+      "far_distance": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "correct_distance": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "near_distance": [
+        {
+          "interpretation": "Intellectually, the candidate has a highly practical and realistic thinking, which allows them to set, for themselves and others, tangible and reachable goals. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Intellectually, the candidate has a highly practical and realistic thinking, which allows them to set, for themselves and others, tangible and reachable goals. ",
+          "highlight": "High practical level.",
+          "value": "High",
+          "skill": "Execution ability"
+        }
+      ],
+
+      "illegible_signature": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "legible_signature": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    }
+  },
+
+  "work": {
+    "legibility": {
+      "illegiblie": [
+        {
+          "interpretation": "Their work behavior is not predictable, showing a limited ability to follow stable work methods and guidelines. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Their work behavior is not predictable, showing a limited ability to follow stable work methods and guidelines. ",
+          "highlight": "Limited ability to follow stable work methods and guidelines.",
+          "value": "Limited",
+          "skill": "Ability to follow directions"
+        }
+      ],
+
+      "legible": [
+        {
+          "interpretation": "Demonstrates adequate organizational and planning skills within the work environment. High ability to be organized and show clarity in their ideas, enabling them for adequate reasoning. They are cautious and follow a work-flow. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Demonstrates adequate organizational and planning skills within the work environment. High ability to be organized and show clarity in their ideas, enabling them for adequate reasoning. They are cautious and follow a work-flow. ",
+          "highlight": "Adequate clarity in their ideas.",
+          "value": "Adequate",
+          "skill": "Clarity of thought"
+        },
+        {
+          "interpretation": "Demonstrates adequate organizational and planning skills within the work environment. High ability to be organized and show clarity in their ideas, enabling them for adequate reasoning. They are cautious and follow a work-flow. ",
+          "highlight": "High organizational skill.",
+          "value": "High",
+          "skill": "Order and planning"
+        }
+      ]
+    },
+
+    "black_pixel_percentage": {
+      "white_domain": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "black_domain": [
+        {
+          "interpretation": "In the work setting, the candidate shows an adequate concentration ability, an adequate sense of economy, preparation and high ability to conduct detailed and thorough analysis.",
+          "highlight": "Adequate concentration ability.",
+          "value": "Adequate",
+          "skill": "Concentration ability"
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows an adequate concentration ability, an adequate sense of economy, preparation and high ability to conduct detailed and thorough analysis.",
+          "highlight": "Adequate sense of economy.",
+          "value": "Adequate",
+          "skill": "Sense of resource economy"
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows an adequate concentration ability, an adequate sense of economy, preparation and high ability to conduct detailed and thorough analysis.",
+          "highlight": "High ability to foresee and analyze details thoroughly.",
+          "value": "High",
+          "skill": "Analytical thinking"
+        },
+        {
+          "interpretation": "In the relational context, the candidate shows a high need for proximity or getting close to other people. They show high ease for socialization and likeness for interpersonal relationships.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "text_stability": {
+      "irregular_handwriting": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "regular_handwriting": [
+        {
+          "interpretation": "They tend to be guided by high ethical behavior standards, and are highly demanding on themselves and others. Along with other factors, certain rigidity may be observed in their own behavior towards themselves and others.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "They tend to be guided by high ethical behavior standards, and are highly demanding on themselves and others. Along with other factors, certain rigidity may be observed in their own behavior towards themselves and others.",
+          "highlight": " Highly demanding on themselves and others.",
+          "value": "High",
+          "skill": "Self-demand"
+        },
+        {
+          "interpretation": "They tend to be guided by high ethical behavior standards, and are highly demanding on themselves and others. Along with other factors, certain rigidity may be observed in their own behavior towards themselves and others.",
+          "highlight": "High ethical behavior standards.",
+          "value": "High",
+          "skill": "Integrity"
+        }
+      ]
+    },
+
+    "seperation_between_the_words": {
+      "correct_separation_between_words": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "long_separation_between_words": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "short_separation_between_words": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+
+      "seperation_between_the_letters": {
+
+      "correct_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "long_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "short_separation_between_letters": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "proportionality_ratio": {
+      "correct_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "tall_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "wide_proportion": [
+        {
+          "interpretation": "In the work setting, they may lose some focus and be impatient.",
+          "highlight": "",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size": {
+      "correct_size": [
+        {
+          "interpretation": "They have a high ability to plan and bring to action. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "They have a high ability to plan and bring to action.",
+          "highlight": "Adequate self-concept and aspirations level.",
+          "value": "Adequate",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "They have a high ability to plan and bring to action. Adequate self-concept and aspirations level. Has a high adaptation ability, being able to undertake supervision as well as subordination positions.",
+          "highlight": "High adaptation ability.",
+          "value": "High",
+          "skill": "Adaptation ability"
+        },
+        {
+          "interpretation": "They have a high ability to plan and bring to action. Adequate self-concept and aspirations level. Has a high adaptation ability, being able to undertake supervision as well as subordination positions.",
+          "highlight": "High planning ability.",
+          "value": "High",
+          "skill": "Order and planning"
+        }
+      ],
+      "large_size": [
+        {
+          "interpretation": "This is a person that adequately expresses their enthusiasm and passion for ideas and / or projects. They have an adequate creativity level.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "This is a person that adequately expresses their enthusiasm and passion for ideas and / or projects. They have an adequate creativity level.",
+          "highlight": "Adequate creativity level.",
+          "value": "Adequate",
+          "skill": "Creativity"
+        }
+      ],
+      "small_size": [
+        {
+          "interpretation": "In regards to their working abilities, the candidate shows a high ability to execute activities which require high concentration levels. High ability to follow instructions, but limited ability to take the initiative. Exhibits a classical analyst profile, tending to be a specialist in their field rather than a generalist. Has a high practical sense and high ability to create cost and budget savings. Has a high sense of economy and practical utility, which is applicable to all kinds of situations. High orientation to the practical.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In regards to their working abilities, the candidate shows a high ability to execute activities which require high concentration levels. High ability to follow instructions, but limited ability to take the initiative. Exhibits a classical analyst profile, tending to be a specialist in their field rather than a generalist. Has a high practical sense and high ability to create cost and budget savings. Has a high sense of economy and practical utility, which is applicable to all kinds of situations. High orientation to the practical.",
+          "highlight": "High ability for activities which require concentration.",
+          "value": "High",
+          "skill": "Concentration ability"
+        },
+        {
+          "interpretation": "In regards to their working abilities, the candidate shows a high ability to execute activities which require high concentration levels. High ability to follow instructions, but limited ability to take the initiative. Exhibits a classical analyst profile, tending to be a specialist in their field rather than a generalist. Has a high practical sense and high ability to create cost and budget savings. Has a high sense of economy and practical utility, which is applicable to all kinds of situations. High orientation to the practical.",
+          "highlight": "High ability to follow instructions.",
+          "value": "High",
+          "skill": "Ability to follow directions"
+        },
+        {
+          "interpretation": "In regards to their working abilities, the candidate shows a high ability to execute activities which require high concentration levels. High ability to follow instructions, but limited ability to take the initiative. Exhibits a classical analyst profile, tending to be a specialist in their field rather than a generalist. Has a high practical sense and high ability to create cost and budget savings. Has a high sense of economy and practical utility, which is applicable to all kinds of situations. High orientation to the practical.",
+          "highlight": "High sense of economy and create cost savings.",
+          "value": "High",
+          "skill": "Sense of resource economy"
+        },
+        {
+          "interpretation": "In regards to their working abilities, the candidate shows a high ability to execute activities which require high concentration levels. High ability to follow instructions, but limited ability to take the initiative. Exhibits a classical analyst profile, tending to be a specialist in their field rather than a generalist. Has a high practical sense and high ability to create cost and budget savings. Has a high sense of economy and practical utility, which is applicable to all kinds of situations. High orientation to the practical.",
+          "highlight": "High practical sense.",
+          "value": "High",
+          "skill": "Execution ability"
+        },
+        {
+          "interpretation": "In regards to their working abilities, the candidate shows a high ability to execute activities which require high concentration levels. High ability to follow instructions, but limited ability to take the initiative. Exhibits a classical analyst profile, tending to be a specialist in their field rather than a generalist. Has a high practical sense and high ability to create cost and budget savings. Has a high sense of economy and practical utility, which is applicable to all kinds of situations. High orientation to the practical.",
+          "highlight": "Limited ability to take the initiative. ",
+          "value": "",
+          "skill": "Ability to make decisions"
+        }
+      ],
+      "very_large_size": [
+        {
+          "interpretation": "In regards to their working skills, the candidate may show a high tendency to lose focus when executing their tasks.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In regards to their working skills, the candidate may show a high tendency to lose focus when executing their tasks. ",
+          "highlight": "High tendency to lose focus when executing tasks.",
+          "value": "High",
+          "skill": "Concentration ability"
+        }
+      ],
+      "very_small_size": [
+        {
+          "interpretation": "They are a person who can work alone, mainly in the thorough analysis of data. Low creativity.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "They are a person who can work alone, mainly in the thorough analysis of data. Low creativity.",
+          "highlight": "Low creativity.",
+          "value": "Limited",
+          "skill": "Creativity"
+        }
+      ]
+    },
+    "size_regularity": {
+      "irregular": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "regular": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size_variability": {
+      "decreasing": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "increasing": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "no_phenomenon": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "pressure": {
+      "correct_pressure": [
+        {
+          "interpretation": "The candidate has an adequate work-adaptation level. They exhibit an adequate orientation towards a job well done and to view situations in a positive light, demonstrating an adequate capacity to overcome complex or frustrating situations. The candidate shows an adequate ability for creation, idea undertaking and executive capacity. Adequate persuasion and general understanding abilities.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate has an adequate work-adaptation level. They exhibit an adequate orientation towards a job well done and to view situations in a positive light, demonstrating an adequate capacity to overcome complex or frustrating situations. The candidate shows an adequate ability for creation, idea undertaking and executive capacity. Adequate persuasion and general understanding abilities.",
+          "highlight": " Adequate persuasion ability.",
+          "value": "Adequate",
+          "skill": "Communication skill"
+        },
+        {
+          "interpretation": "The candidate has an adequate work-adaptation level. They exhibit an adequate orientation towards a job well done and to view situations in a positive light, demonstrating an adequate capacity to overcome complex or frustrating situations. The candidate shows an adequate ability for creation, idea undertaking and executive capacity. Adequate persuasion and general understanding abilities.",
+          "highlight": "Adequate creation, idea undertaking and executive capacities.",
+          "value": "Adequate",
+          "skill": "Creativity"
+        },
+        {
+          "interpretation": "The candidate has an adequate work-adaptation level. They exhibit an adequate orientation towards a job well done and to view situations in a positive light, demonstrating an adequate capacity to overcome complex or frustrating situations. The candidate shows an adequate ability for creation, idea undertaking and executive capacity. Adequate persuasion and general understanding abilities.",
+          "highlight": "Adequate ability for overcoming complex situations. ",
+          "value": "Adequate",
+          "skill": "Management of complex situations"
+        },
+        {
+          "interpretation": "The candidate has an adequate work-adaptation level. They exhibit an adequate orientation towards a job well done and to view situations in a positive light, demonstrating an adequate capacity to overcome complex or frustrating situations. The candidate shows an adequate ability for creation, idea undertaking and executive capacity. Adequate persuasion and general understanding abilities.",
+          "highlight": "Adequate orientation towards tasks.",
+          "value": "Adequate",
+          "skill": "Execution ability"
+        },
+        {
+          "interpretation": "The candidate has an adequate work-adaptation level. They exhibit an adequate orientation towards a job well done and to view situations in a positive light, demonstrating an adequate capacity to overcome complex or frustrating situations. The candidate shows an adequate ability for creation, idea undertaking and executive capacity. Adequate persuasion and general understanding abilities.",
+          "highlight": "Adequate work-adaptation level.",
+          "value": "Adequate",
+          "skill": "Work oriented"
+        }
+      ],
+      "strong_pressure": [
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "Adequate confidence and security in their doing.",
+          "value": "Adequate",
+          "skill": "Self-confidence"
+        },
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "Adequate levels of energy and work capacity.",
+          "value": "Adequate",
+          "skill": "Energy level "
+        },
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "Adequate level of work performance.",
+          "value": "Adequate",
+          "skill": "Productivity"
+        },
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "High orientation to action and decision-making.",
+          "value": "High",
+          "skill": "Execution ability"
+        },
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "High resistance to demanding workloads.",
+          "value": "High",
+          "skill": "Resistance to stress"
+        },
+        {
+          "interpretation": "The person has an adequate level of energy and working ability, showing high resistance to demanding workloads and pressures coming from the job. Is highly action-oriented and able to make decisions and express their opinions on different topics or situations. Adequate confidence and security in their doing. It is estimated that the candidate has an adequate work performance level. Sometimes, given this energetic level, they may appear as a more passionate person in their work and show certain traits of aggressiveness. They are a highly dynamic person both in terms of thinking as well as execution. They tend to work in an accurate manner, demonstrating an adequate decisiveness and decision-making skills.",
+          "highlight": "High dynamism.",
+          "value": "",
+          "skill": "Ability to make decisions"
+        }
+      ],
+      "soft_pressure": [
+        {
+          "interpretation": "The candidate shows moderate vitality, which makes it hard to overcome obstacles or deal with complex situations which demand more energy. Moderate problem resolution ability",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows moderate vitality, which makes it hard to overcome obstacles or deal with complex situations which demand more energy. Moderate problem resolution ability.",
+          "highlight": "Moderate vitality energy level.",
+          "value": "Moderate",
+          "skill": "Energy level"
+        },
+        {
+          "interpretation": "The candidate shows moderate vitality, which makes it hard to overcome obstacles or deal with complex situations which demand more energy. Moderate problem resolution ability.",
+          "highlight": "Moderate problem resolution ability.",
+          "value": "",
+          "skill": "Execution ability"
+        }
+      ]
+    },
+    "letter_tilt": {
+      "inclined_progressive": [
+        {
+          "interpretation": "Has a highly cooperatively work style, presenting their points of view, as well as integrating and accepting others’ points of view. Has an adequate level of risk acceptance and is motivated by new projects. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Has a highly cooperatively work style, presenting their points of view, as well as integrating and accepting others’ points of view. Has an adequate level of risk acceptance and is motivated by new projects. ",
+          "highlight": "Adequate risk-acceptance level.",
+          "value": "Adequate",
+          "skill": "Risk oriented"
+        },
+        {
+          "interpretation": "Has a highly cooperatively work style, presenting their points of view, as well as integrating and accepting others’ points of view. Has an adequate level of risk acceptance and is motivated by new projects. ",
+          "highlight": "Highly cooperative work style.",
+          "value": "High",
+          "skill": "Team work"
+        },
+        {
+          "interpretation": "Has a highly cooperatively work style, presenting their points of view, as well as integrating and accepting others’ points of view. Has an adequate level of risk acceptance and is motivated by new projects.",
+          "highlight": "High levels of autonomous motivation.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ],
+      "inverted_regressive": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "moderately_inclined": [
+        {
+          "interpretation": "The candidate tends to choose jobs that involve moderate action or motion. High theoretical thinking and limited practical thinking levels.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate tends to choose jobs that involve moderate action or motion. High theoretical thinking and limited practical thinking levels.",
+          "highlight": "High theoretical thinking level.",
+          "value": "High",
+          "skill": "Abstract thinking"
+        },
+        {
+          "interpretation": "The candidate tends to choose jobs that involve moderate action or motion. High theoretical thinking and limited practical thinking levels.",
+          "highlight": "Limited practical thinking level.",
+          "value": "Limited",
+          "skill": "Execution ability"
+        },
+        {
+          "interpretation": "The candidate tends to choose jobs that involve moderate action or motion. High theoretical thinking and limited practical thinking levels.",
+          "highlight": "Chooses tasks with moderate action or motion.",
+          "value": "Moderate",
+          "skill": "Energy level"
+        }
+      ],
+
+      "moderately_inverted": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "speed": {
+      "correct_speed": [
+        {
+          "interpretation": "In the work setting, the candidate has a moderate work rhythm, that is, not in a hurry but not stopping. They exhibit abilities for both subordinate and managerial positions, possessing a wide field of action.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In the work setting, the candidate has a moderate work rhythm, that is, not in a hurry but not stopping. They exhibit abilities for both subordinate and managerial positions, possessing a wide field of action.",
+          "highlight": "Moderate work rhythm.",
+          "value": "Moderate",
+          "skill": "Energy level"
+        }
+      ],
+      "fast_speed": [
+        {
+          "interpretation": "At work, they are a highly diligent and dynamic person. Their profile is ideal for positions which require movement. In this sense, the candidate has a limited preference for activities that require a lot of waiting or patience, observing a limited tolerance to monotony. Given their high focus towards motion, their concentration and organization skills may be placed in a moderate level, but their initiative is enhanced. The candidate makes an effort to achieve results in the least time possible, at times being highly anxious or impatient.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "At work, they are a highly diligent and dynamic person. Their profile is ideal for positions which require movement. In this sense, the candidate has a limited preference for activities that require a lot of waiting or patience, observing a limited tolerance to monotony. Given their high focus towards motion, their concentration and organization skills may be placed in a moderate level, but their initiative is enhanced. The candidate makes an effort to achieve results in the least time possible, at times being highly anxious or impatient.",
+          "highlight": "Highly dilligent and dynamic.",
+          "value": "High",
+          "skill": "Energy level"
+        },
+        {
+          "interpretation": "At work, they are a highly diligent and dynamic person. Their profile is ideal for positions which require movement. In this sense, the candidate has a limited preference for activities that require a lot of waiting or patience, observing a limited tolerance to monotony. Given their high focus towards motion, their concentration and organization skills may be placed in a moderate level, but their initiative is enhanced. The candidate makes an effort to achieve results in the least time possible, at times being highly anxious or impatient.",
+          "highlight": "Limited tolerance to monotony.",
+          "value": "Limited",
+          "skill": "Administrative work"
+        },
+        {
+          "interpretation": "At work, they are a highly diligent and dynamic person. Their profile is ideal for positions which require movement. In this sense, the candidate has a limited preference for activities that require a lot of waiting or patience, observing a limited tolerance to monotony. Given their high focus towards motion, their concentration and organization skills may be placed in a moderate level, but their initiative is enhanced. The candidate makes an effort to achieve results in the least time possible, at times being highly anxious or impatient.",
+          "highlight": "Occasionally may be highly impatientU+002e",
+          "value": "High",
+          "skill": "Adaptation ability"
+        },
+        {
+          "interpretation": "At work, they are a highly diligent and dynamic person. Their profile is ideal for positions which require movement. In this sense, the candidate has a limited preference for activities that require a lot of waiting or patience, observing a limited tolerance to monotony. Given their high focus towards motion, their concentration and organization skills may be placed in a moderate level, but their initiative is enhanced. The candidate makes an effort to achieve results in the least time possible, at times being highly anxious or impatient.",
+          "highlight": "Moderate concentration levels. ",
+          "value": "Moderate",
+          "skill": "Concentration ability"
+        }
+      ],
+      "slow_speed": [
+        {
+          "interpretation": " High ability to be consistent over time, though at a slower and easier pace. The person shows high levels of patience, tolerance and orientation to routine work. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": " High ability to be consistent over time, though at a slower and easier pace. The person shows high levels of patience, tolerance and orientation to routine work. ",
+          "highlight": "High persistence ability.",
+          "value": "High",
+          "skill": "Perseverance"
+        },
+        {
+          "interpretation": " High ability to be consistent over time, though at a slower and easier pace. The person shows high levels of patience, tolerance and orientation to routine work. ",
+          "highlight": "High levels of patience and tolerance to routine work.",
+          "value": "High",
+          "skill": "Administrative work"
+        }
+      ]
+    },
+    "line_slope": {
+      "ascending_lines": [
+        {
+          "interpretation": "In the work setting, the candidate shows high creativity, god imagination and an adequate work intensity, being able to withstand high work loads. Their aspirational levels are high, always seeking to improve and make progress. They show a high preference for leadership positions. They have good communication skills and are willing to exchange ideas and opinions. High communication ability.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows high creativity, god imagination and an adequate work intensity, being able to withstand high work loads. Their aspirational levels are high, always seeking to improve and make progress. They show a high preference for leadership positions. They have good communication skills and are willing to exchange ideas and opinions. High communication ability.",
+          "highlight": "Adequate working intensity.",
+          "value": "Adequate",
+          "skill": "Energy level"
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows high creativity, god imagination and an adequate work intensity, being able to withstand high work loads. Their aspirational levels are high, always seeking to improve and make progress. They show a high preference for leadership positions. They have good communication skills and are willing to exchange ideas and opinions. High communication ability.",
+          "highlight": "High communication ability.",
+          "value": "High",
+          "skill": "Communication skill"
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows high creativity, god imagination and an adequate work intensity, being able to withstand high work loads. Their aspirational levels are high, always seeking to improve and make progress. They show a high preference for leadership positions. They have good communication skills and are willing to exchange ideas and opinions. High communication ability.",
+          "highlight": "High creativity and imagination.",
+          "value": "High",
+          "skill": "Creativity"
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows high creativity, god imagination and an adequate work intensity, being able to withstand high work loads. Their aspirational levels are high, always seeking to improve and make progress. They show a high preference for leadership positions. They have good communication skills and are willing to exchange ideas and opinions. High communication ability.",
+          "highlight": "High aspirational level. ",
+          "value": "High",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "In the work setting, the candidate shows high creativity, god imagination and an adequate work intensity, being able to withstand high work loads. Their aspirational levels are high, always seeking to improve and make progress. They show a high preference for leadership positions. They have good communication skills and are willing to exchange ideas and opinions. High communication ability.",
+          "highlight": "High preference for leadership positions.",
+          "value": "High",
+          "skill": "Leadership"
+        }
+      ],
+
+      "descending_lines": [
+        {
+          "interpretation": "A limited energy level is observed in the work setting, and is possible to fall into burn-out. Limited ability to resist pressure and high workloads. Their ability to take the initiative and their general aspirations level are limited.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "A limited energy level is observed in the work setting, and is possible to fall into burn-out. Limited ability to resist pressure and high workloads. Their ability to take the initiative and their general aspirations level are limited.",
+          "highlight": "Limited ability to withstand pressure.",
+          "value": "Limited",
+          "skill": "Resistance to stress"
+        },
+        {
+          "interpretation": "A limited energy level is observed in the work setting, and is possible to fall into burn-out. Limited ability to resist pressure and high workloads. Their ability to take the initiative and their general aspirations level are limited.",
+          "highlight": "Limited aspiration levels.",
+          "value": "Limited",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "A limited energy level is observed in the work setting, and is possible to fall into burn-out. Limited ability to resist pressure and high workloads. Their ability to take the initiative and their general aspirations level are limited.",
+          "highlight": "Low energy level.",
+          "value": "Limited",
+          "skill": "Energy level"
+        }
+      ],
+      "horizontal_lines": [
+        {
+          "interpretation": "The candidate shows an adequate personality structure, and is stable and consistent. Shows a balanced attitude in all aspects, both work and personal. Their productivity levels are adequate, without ups and downs and with a highly practical orientation. High perseverance. Is fit to undertake leadership and subordination positions, depending on the time and circumstances.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows an adequate personality structure, and is stable and consistent. Shows a balanced attitude in all aspects, both work and personal. Their productivity levels are adequate, without ups and downs and with a highly practical orientation. High perseverance. Is fit to undertake leadership and subordination positions, depending on the time and circumstances.",
+          "highlight": "Adequate personality structure.",
+          "value": "Adequate",
+          "skill": "Personality maturity"
+        },
+        {
+          "interpretation": "The candidate shows an adequate personality structure, and is stable and consistent. Shows a balanced attitude in all aspects, both work and personal. Their productivity levels are adequate, without ups and downs and with a highly practical orientation. High perseverance. Is fit to undertake leadership and subordination positions, depending on the time and circumstances.",
+          "highlight": "Adequate productivity levels.",
+          "value": "Adequate",
+          "skill": "Productivity"
+        },
+        {
+          "interpretation": "The candidate shows an adequate personality structure, and is stable and consistent. Shows a balanced attitude in all aspects, both work and personal. Their productivity levels are adequate, without ups and downs and with a highly practical orientation. High perseverance. Is fit to undertake leadership and subordination positions, depending on the time and circumstances.",
+          "highlight": "High perseverance.",
+          "value": "High",
+          "skill": "Perseverance"
+        },
+        {
+          "interpretation": "The candidate shows an adequate personality structure, and is stable and consistent. Shows a balanced attitude in all aspects, both work and personal. Their productivity levels are adequate, without ups and downs and with a highly practical orientation. High perseverance. Is fit to undertake leadership and subordination positions, depending on the time and circumstances.",
+          "highlight": "Highly practical. ",
+          "value": "High",
+          "skill": "Execution ability"
+        }
+      ],
+      "very_ascending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_descending_lines": [
+        {
+          "interpretation": "In the work setting, the candidate is highly passive and has limited abilities to project over time. Their aspirational levels and their ability to handle frustration are limited. They are easily frustrated.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In the work setting, the candidate is highly passive and has limited abilities to project over time. Their aspirational levels and their ability to handle frustration are limited. They are easily frustrated.",
+          "highlight": "Highly passive.",
+          "value": "High",
+          "skill": "Energy level"
+        },
+        {
+          "interpretation": "In the work setting, the candidate is highly passive and has limited abilities to project over time. Their aspirational levels and their ability to handle frustration are limited. They are easily frustrated.",
+          "highlight": "Limited ability to grow over time.",
+          "value": "Limited",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "In the work setting, the candidate is highly passive and has limited abilities to project over time. Their aspirational levels and their ability to handle frustration are limited. They are easily frustrated.",
+          "highlight": "Limited tolerance to frustration.",
+          "value": "Limited",
+          "skill": "Tolerance to frustration"
+        }
+      ]
+    },
+    "shape": {
+      "curved": [
+        {
+          "interpretation": "The candidate tends to achieve their objectives and goals using more interpersonal skills. They make use of their niceness to get where they want to go, tending to win the credibility of others as a support. They have artistic abilities and / or a high sense of aesthetics.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight_angled": [
+        {
+          "interpretation": " The candidate shows self-confidence and resolutive capacity. They are a person with a strong character and are directly oriented to the achievement of goals and objectives. The person tends to achieve their objectives due to their strong character and directionality.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "signature_position": {
+      "center": [
+        {
+          "interpretation": "They appear as a highly prudent candidate when making decisions that may be deferred over time.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "They appear as a highly prudent candidate when making decisions that may be deferred over time.",
+          "highlight": "Highly cautious in decision-making processes.",
+          "value": "High",
+          "skill": "Ability to make decisions"
+        }
+      ],
+      "left": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "right": [
+        {
+          "interpretation": "The candidate shows a high level of initiative, which at times could be adopted as a somewhat more aggressive position. They are highly enthusiastic and really work to achieve their aspirations. and objectives.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a high level of initiative, which at times could be adopted as a somewhat more aggressive position. They are highly enthusiastic and really work to achieve their aspirations. and objectives.",
+          "highlight": "Highly enthusiastic.",
+          "value": "High",
+          "skill": "Energy level"
+        },
+        {
+          "interpretation": "The candidate shows a high level of initiative, which at times could be adopted as a somewhat more aggressive position. They are highly enthusiastic and really work to achieve their aspirations. and objectives.",
+          "highlight": "High initiative level.",
+          "value": "High",
+          "skill": "Energy level"
+        }
+      ]
+    },
+    "signature_distance_to_text": {
+      "far_distance": [
+        {
+          "interpretation": " In the work setting, this is a more analytical than executive profile. High preference for working alone and limited ability in communication processes. The candidate may show a certain distance between what they want and what they perceive they can reach. This person is hard to motivate.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": " In the work setting, this is a more analytical than executive profile. High preference for working alone and limited ability in communication processes. The candidate may show a certain distance between what they want and what they perceive they can reach. This person is hard to motivate.",
+          "highlight": "High preference for working alone.",
+          "value": "High",
+          "skill": "Team work"
+        },
+        {
+          "interpretation": " In the work setting, this is a more analytical than executive profile. High preference for working alone and limited ability in communication processes. The candidate may show a certain distance between what they want and what they perceive they can reach. This person is hard to motivate.",
+          "highlight": "Limited communicational abilities.",
+          "value": "Limited",
+          "skill": "Communication skill"
+        }
+      ],
+      "correct_distance": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "near_distance": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "illegible_signature": [
+        {
+          "interpretation": "In the work setting, the person shows a limited ability to face complex and conflictive situations, tending to avoid them and not engage in them. This situation may hinder their ability to fully assume responsibility.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In the work setting, the person shows a limited ability to face complex and conflictive situations, tending to avoid them and not engage in them. This situation may hinder their ability to fully assume responsibility.",
+          "highlight": "Limited ability to face complex situations.",
+          "value": "Limited",
+          "skill": "Management of complex situations"
+        }
+      ],
+      "legible_signature": [
+        {
+          "interpretation": "The candidate has an adequate level of awareness regarding their own capabilities and limitations. In the work setting, they are observed to be an authentic and responsible person, showing high clarity in their ideas and objectives. They have a high sense of duty and responsibility. This is an honest, trustworthy and authentic person, who places great value on the word spoken.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate has an adequate level of awareness regarding their own capabilities and limitations. In the work setting, they are observed to be an authentic and responsible person, showing high clarity in their ideas and objectives. They have a high sense of duty and responsibility. This is an honest, trustworthy and authentic person, who places great value on the word spoken.",
+          "highlight": "Adequate level of awareness regarding their abilities.",
+          "value": "Adequate",
+          "skill": "Self-esteem"
+        },
+        {
+          "interpretation": "The candidate has an adequate level of awareness regarding their own capabilities and limitations. In the work setting, they are observed to be an authentic and responsible person, showing high clarity in their ideas and objectives. They have a high sense of duty and responsibility. This is an honest, trustworthy and authentic person, who places great value on the word spoken.",
+          "highlight": "High sense of duty and responsibility.",
+          "value": "High",
+          "skill": "Work oriented"
+        }
+      ]
+    }
+  },
+
+  "relational": {
+    "legibility": {
+      "illegiblie": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "legible": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+
+    "black_pixel_percentage": {
+      "white_domain": [
+        {
+          "interpretation": "In relational terms, the candidate shows a limited interpersonal contact level. They prefer silence and solitude.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a limited interpersonal contact level. They prefer silence and solitude.",
+          "highlight": "Limited interpersonal contact level.",
+          "value": "Limited",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+
+      "black_domain": [
+        {
+          "interpretation": "In the relational context, the candidate shows a high need for proximity or getting close to other people. They show high ease for socialization and likeness for interpersonal relationships.",
+          "highlight": "High ease for socialization and likeness for interpersonal relationships.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "In the relational context, the candidate shows a high need for proximity or getting close to other people. They show high ease for socialization and likeness for interpersonal relationships.",
+          "highlight": "High need for proximity.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "In the relational context, the candidate shows a high need for proximity or getting close to other people. They show high ease for socialization and likeness for interpersonal relationships.",
+          "highlight": "High need for proximity.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ]
+    },
+
+    "text_stability": {
+      "irregular_handwriting": [
+        {
+          "interpretation": "A highly affective character is observed. High spontaneity and are not usually guided by conventional logic. Along with other factors, they may show some level of nervousness, impatience and inconstancy, with their behavior being difficult to predict.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "A highly affective character is observed. High spontaneity and are not usually guided by conventional logic. Along with other factors, they may show some level of nervousness, impatience and inconstancy, with their behavior being difficult to predict. ",
+          "highlight": "High affection.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        },
+        {
+          "interpretation": "A highly affective character is observed. High spontaneity and are not usually guided by conventional logic. Along with other factors, they may show some level of nervousness, impatience and inconstancy, with their behavior being difficult to predict.",
+          "highlight": "High spontaneity level.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        }
+      ],
+
+      "regular_handwriting": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+
+    "seperation_between_the_words": {
+      "correct_separation_between_words": [
+        {
+          "interpretation": "The candidate has an adequate bonding level, bonds with others fluently and with no apprehensions. They are interested in people and tend to cooperate with them.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate has an adequate bonding level, bonds with others fluently and with no apprehensions. They are interested in people and tend to cooperate with them.",
+          "highlight": "Adequate bonding level, bonds with others fluently.",
+          "value": "Adequate",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+      "long_separation_between_words": [
+        {
+          "interpretation": "The candidate shows a a high tendency to isolation. Is usually very selective when in contact with others.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows a a high tendency to isolation. Is usually very selective when in contact with others.",
+          "highlight": "High tendency to isolation.",
+          "value": "High",
+          "skill": ""
+        },
+        {
+          "interpretation": "Relationally, a moderate degree of self-doubt is observed, which makes them seek recognition and approval from others. They have an adequate ability to integrate into work teams and groups in general, even when they tend to depend on others.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "short_separation_between_words": [
+        {
+          "interpretation": "In relational terms, the candidate shows a rather introverted style. Manages to achieve a moderate level of relationships with others, being rather shy and reserved. The person is one of few relationships, but those that are established are usually deep and long term. It is not a person who trusts in the first instance. They take their time to get to know and open up to others. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a rather introverted style. Manages to achieve a moderate level of relationships with others, being rather shy and reserved. The person is one of few relationships, but those that are established are usually deep and long term. It is not a person who trusts in the first instance. They take their time to get to know and open up to others. ",
+          "highlight": "Moderate bonding level.",
+          "value": "Moderate",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ]
+    },
+
+      "seperation_between_the_letters" : {
+
+      "correct_separation_between_letters": [
+        {
+          "interpretation": "In relational terms, the candidate shows a high relationship level with others. They are usually located in a mid-zone between introversion and extroversion, with a high ability to adapt to the requirements of each relationship. They adequately face short term contacts, as well as those that involve building long term bonds.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a high relationship level with others. They are usually located in a mid-zone between introversion and extroversion, with a high ability to adapt to the requirements of each relationship. They adequately face short term contacts, as well as those that involve building long term bonds.",
+          "highlight": "Adequate ability to face short and long term contacts.",
+          "value": "Adequate",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a high relationship level with others. They are usually located in a mid-zone between introversion and extroversion, with a high ability to adapt to the requirements of each relationship. They adequately face short term contacts, as well as those that involve building long term bonds.",
+          "highlight": "Adequate balance between introversion and extroversion.",
+          "value": "Adequate",
+          "skill": "Extrovert / Introvert"
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a high relationship level with others. They are usually located in a mid-zone between introversion and extroversion, with a high ability to adapt to the requirements of each relationship. They adequately face short term contacts, as well as those that involve building long term bonds.",
+          "highlight": "High adaptation ability.",
+          "value": "High",
+          "skill": "Adaptation ability"
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a high relationship level with others. They are usually located in a mid-zone between introversion and extroversion, with a high ability to adapt to the requirements of each relationship. They adequately face short term contacts, as well as those that involve building long term bonds.",
+          "highlight": "High relationships level.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+
+      "long_separation_between_letters": [
+        {
+          "interpretation": "In relational terms, the candidate shows an expansive character, they are usually a highly honest and open person, bonding with others spontaneously and with self-confidence. Their interactions, in this sense, are more superficial than deep, however, they show a high ability to create bonds.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows an expansive character, they are usually a highly honest and open person, bonding with others spontaneously and with self-confidence. Their interactions, in this sense, are more superficial than deep, however, they show a high ability to create bonds.",
+          "highlight": "High ability to create bonds.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows an expansive character, they are usually a highly honest and open person, bonding with others spontaneously and with self-confidence. Their interactions, in this sense, are more superficial than deep, however, they show a high ability to create bonds.",
+          "highlight": "Highly open and honest when bonding with others.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+
+      "short_separation_between_letters": [
+        {
+          "interpretation": "In relational terms, the candidate shows a rather introverted style. Manages to achieve a moderate level of relationships with others, being rather shy and reserved. The person is one of few relationships, but those that are established are usually deep and long term. It is not a person who trusts in the first instance. They take their time to get to know and open up to others.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a rather introverted style. Manages to achieve a moderate level of relationships with others, being rather shy and reserved. The person is one of few relationships, but those that are established are usually deep and long term. It is not a person who trusts in the first instance. They take their time to get to know and open up to others. ",
+          "highlight": "Moderate bonding level.",
+          "value": "Moderate",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ]
+    },
+    "proportionality_ratio": {
+      "correct_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "tall_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "wide_proportion": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size": {
+      "correct_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "large_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "small_size": [
+        {
+          "interpretation": "Is usually highly introverted and shy, in occasions, insecure and somewhat anxious.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Is usually highly introverted and shy, in occasions, insecure and somewhat anxious.",
+          "highlight": "High introversion and shyness.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        },
+        {
+          "interpretation": "Is usually highly introverted and shy, in occasions, insecure and somewhat anxious.",
+          "highlight": "Limited self-esteem.",
+          "value": "Limited",
+          "skill": "Self-esteem"
+        }
+      ],
+      "very_large_size": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_small_size": [
+        {
+          "interpretation": "The candidate shows significant limitations in their self-esteem. They tend to be highly introverted, hindering their ability to work with others. High difficulty for teamwork. High orientation towards individual work.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate shows significant limitations in their self-esteem. They tend to be highly introverted, hindering their ability to work with others. High difficulty for teamwork. High orientation towards individual work.",
+          "highlight": "High difficulty for teamwork.",
+          "value": "High",
+          "skill": "Team work"
+        },
+        {
+          "interpretation": "The candidate shows significant limitations in their self-esteem. They tend to be highly introverted, hindering their ability to work with others. High difficulty for teamwork. High orientation towards individual work.",
+          "highlight": "High orientation towards individual work.",
+          "value": "High",
+          "skill": "Team work"
+        },
+        {
+          "interpretation": "The candidate shows significant limitations in their self-esteem. They tend to be highly introverted, hindering their ability to work with others. High difficulty for teamwork. High orientation towards individual work.",
+          "highlight": "High introversion.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        }
+      ]
+    },
+    "size_regularity": {
+      "irregular": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "regular": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "size_variability": {
+      "decreasing": [
+        {
+          "interpretation": "The candidate tends to bond with high levels of empathy, being a keen and curious observer in regards to others. They are highly skillful in terms of relationships, though also cautious and tactful. May appear as a shy and insecure person, but relates adequately.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "The candidate tends to bond with high levels of empathy, being a keen and curious observer in regards to others. They are highly skillful in terms of relationships, though also cautious and tactful. May appear as a shy and insecure person, but relates adequately.",
+          "highlight": "Highly skillful at relationships.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "The candidate tends to bond with high levels of empathy, being a keen and curious observer in regards to others. They are highly skillful in terms of relationships, though also cautious and tactful. May appear as a shy and insecure person, but relates adequately.",
+          "highlight": "High empathy levels.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "The candidate tends to bond with high levels of empathy, being a keen and curious observer in regards to others. They are highly skillful in terms of relationships, though also cautious and tactful. May appear as a shy and insecure person, but relates adequately.",
+          "highlight": "Adequate relationships with others.",
+          "value": "Adequate",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+      "increasing": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "no_phenomenon": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "pressure": {
+      "correct_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "strong_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "soft_pressure": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "letter_tilt": {
+      "inclined_progressive": [
+        {
+          "interpretation": "Person with a high orientation towards interpersonal contact and teamwork. They feel high interest for others and are concerned about making them feel good. Has high behavior habits, being open and spontaneous.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Person with a high orientation towards interpersonal contact and teamwork. They feel high interest for others and are concerned about making them feel good. Has high behavior habits, being open and spontaneous.",
+          "highlight": "High orientation towards interpersonal contact.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "Person with a high orientation towards interpersonal contact and teamwork. They feel high interest for others and are concerned about making them feel good. Has high behavior habits, being open and spontaneous.",
+          "highlight": "High interest on people.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        },
+        {
+          "interpretation": "Person with a high orientation towards interpersonal contact and teamwork. They feel high interest for others and are concerned about making them feel good. Has high behavior habits, being open and spontaneous.",
+          "highlight": "High behavior habits, open and spontaneous.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        }
+      ],
+      "inverted_regressive": [
+        {
+          "interpretation": "In relational terms, the candidate shows a defensive and a moderately defensive and protection stance towards others and various situations. This may make them come across as a highly shy, passive, reserved or oppositional person. In a relationship, they may assume a somewhat dry and hard attitude. They are usually selective regarding others.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a defensive and a moderately defensive and protection stance towards others and various situations. This may make them come across as a highly shy, passive, reserved or oppositional person. In a relationship, they may assume a somewhat dry and hard attitude. They are usually selective regarding others.",
+          "highlight": "Moderately defensive stance.",
+          "value": "Moderate",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a defensive and a moderately defensive and protection stance towards others and various situations. This may make them come across as a highly shy, passive, reserved or oppositional person. In a relationship, they may assume a somewhat dry and hard attitude. They are usually selective regarding others.",
+          "highlight": "May appear as highly shy or reserved.",
+          "value": "",
+          "skill": "Extrovert / Introvert"
+        }
+      ],
+      "moderately_inclined": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+
+      "moderately_inverted": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "speed": {
+      "correct_speed": [
+        {
+          "interpretation": "Their relationship styles are moderately controlled.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Their relationship styles are moderately controlled.",
+          "highlight": "Relationships moderately controlled.",
+          "value": "",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+      "fast_speed": [
+        {
+          "interpretation": "In relational terms, the candidate tends to extroversion, exhibiting high affinity to express emotion. They have a high ability to relate to many people at once, being spontaneous and easily adapting to work teams. Their profile is adequate for positions where a good level of public relations is required.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate tends to extroversion, exhibiting high affinity to express emotion. They have a high ability to relate to many people at once, being spontaneous and easily adapting to work teams. Their profile is adequate for positions where a good level of public relations is required.",
+          "highlight": "High ability for expression of emotion.",
+          "value": "",
+          "skill": "Extrovert / Introvert"
+        },
+        {
+          "interpretation": "In relational terms, the candidate tends to extroversion, exhibiting high affinity to express emotion. They have a high ability to relate to many people at once, being spontaneous and easily adapting to work teams. Their profile is adequate for positions where a good level of public relations is required.",
+          "highlight": "High ability to relate to many people.",
+          "value": "High",
+          "skill": "Extrovert / Introvert"
+        },
+        {
+          "interpretation": "In relational terms, the candidate tends to extroversion, exhibiting high affinity to express emotion. They have a high ability to relate to many people at once, being spontaneous and easily adapting to work teams. Their profile is adequate for positions where a good level of public relations is required.",
+          "highlight": "Highly influenced by the environment.",
+          "value": "",
+          "skill": "Personality maturity"
+        },
+        {
+          "interpretation": "In relational terms, the candidate tends to extroversion, exhibiting high affinity to express emotion. They have a high ability to relate to many people at once, being spontaneous and easily adapting to work teams. Their profile is adequate for positions where a good level of public relations is required.",
+          "highlight": "Limited self-control.",
+          "value": "Limited",
+          "skill": "Emotional stability and impulse control"
+        }
+      ],
+      "slow_speed": [
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "Adequate persuasion ability.",
+          "value": "Adequate",
+          "skill": "Emotional stability and impulse control"
+        },
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "Adequate common sense.",
+          "value": "Adequate",
+          "skill": "Common sense"
+        },
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "High preference for administrative tasks.",
+          "value": "High",
+          "skill": "Administrative work"
+        },
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "High ability for completion and practicality.",
+          "value": "High",
+          "skill": "Execution ability"
+        },
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "High concentration ability. ",
+          "value": "High",
+          "skill": "Concentration ability"
+        },
+        {
+          "interpretation": "They are a calm, realistic and down-to-earth person. They show an adequate common sense and practicality. High concentration ability and good memory. They show a high preference for administrative positions or those that involve sorting and classifying data. They tend to feel more comfortable when others make decisions and require clarity on what they have to do. Not a person for high-stress, fast-paced jobs, showing a moderate pressure-tolerance level. The candidate exhibits traits related to moderate introversion, demonstrating an adequate emotional stability and calm attitudes, which are stable over time. In relational terms, the candidate tends to create simple and plain bonds.",
+          "highlight": "Moderate pressure-tolerance level. ",
+          "value": "Moderate",
+          "skill": "Resistance to stress"
+        }
+      ]
+    },
+    "line_slope": {
+      "ascending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "descending_lines": [
+        {
+          "interpretation": "When interacting with others, a highly stubborn character and a certain intransigence towards the opinions and behaviors of others may predominate.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "When interacting with others, a highly stubborn character and a certain intransigence towards the opinions and behaviors of others may predominate.",
+          "highlight": "Highly stubborn.",
+          "value": "High",
+          "skill": "Reflective thinking"
+        }
+      ],
+      "horizontal_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_ascending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "very_descending_lines": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "shape": {
+      "curved": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "straight_angled": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "signature_position": {
+      "center": [
+        {
+          "interpretation": "The candidate shows a certain control in their social drive. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "left": [
+        {
+          "interpretation": " The candidate exhibits a natural tendency towards a more introvert social interaction. ",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "right": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ]
+    },
+    "signature_distance_to_text": {
+      "far_distance": [
+        {
+          "interpretation": "In relational terms, the candidate shows a certain tendency to isolation, with a high preference for solitary spaces. Shows behaviors typically oriented to introversion, creating highly formal and protocol-guided interactions. Maintains independence in their way of thinking, being difficult to influence.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "In relational terms, the candidate shows a certain tendency to isolation, with a high preference for solitary spaces. Shows behaviors typically oriented to introversion, creating highly formal and protocol-guided interactions. Maintains independence in their way of thinking, being difficult to influence.",
+          "highlight": "Highly formal and protocolar interactions.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+      "correct_distance": [
+        {
+          "interpretation": "In relational terms, the candidate shows an adequate balance and equilibrium in their personal and social lives. Social relationships are placed in the right spot.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "near_distance": [
+        {
+          "interpretation": "Relationally, the candidate integrates socially, tending to adopt currents of ideas, tastes and principles that are dominant in the group they are joining. They adopt the group's ways and relationship styles as their own. They come across as a natural and social person, easy going and with the ability to admit to their own mistakes. Creates adequate social connections.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Relationally, the candidate integrates socially, tending to adopt currents of ideas, tastes and principles that are dominant in the group they are joining. They adopt the group's ways and relationship styles as their own. They come across as a natural and social person, easy going and with the ability to admit to their own mistakes. Creates adequate social connections.",
+          "highlight": "Adequate social connections.",
+          "value": "Adequate",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ],
+
+      "illegible_signature": [
+        {
+          "interpretation": "0",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        }
+      ],
+      "legible_signature": [
+        {
+          "interpretation": "Adequate ability to look at themselves and others, showing high levels of empathy in their relationships.",
+          "highlight": "0",
+          "value": "",
+          "skill": ""
+        },
+        {
+          "interpretation": "Adequate ability to look at themselves and others, showing high levels of empathy in their relationships.",
+          "highlight": "Adequate ability to look at themselves and others.",
+          "value": "Adequate",
+          "skill": "Observation skill"
+        },
+        {
+          "interpretation": "Adequate ability to look at themselves and others, showing high levels of empathy in their relationships.",
+          "highlight": "High empathy towards others.",
+          "value": "High",
+          "skill": "Ability to create bonds and relationships"
+        }
+      ]
+    }
+  }
+}
