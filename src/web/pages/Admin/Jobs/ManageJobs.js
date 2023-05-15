@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import validator from "validator";
 import { validateEmail } from "recruitment-utils/Validators.js";
 import { Link, useHistory } from "react-router-dom";
@@ -10,13 +10,13 @@ import Logo from "recruitment-images/logo-recruiters.svg";
 import LoginBg from "recruitment-images/admin.svg";
 import CustomLoader from "recruitment-components/CustomLoader/CustomLoader.js";
 import ToolTip from "recruitment-components/Tooltip/Tooltip.js";
-
+import SingleSelect from "../../../components/MuiSelect/SingleSelect.js";
 import Input from "recruitment-components/Input/Input.js";
 import CustomDatepicker from "recruitment-components/CustomDatepicker/CustomDatepicker.js";
 import CustomMobile from "recruitment-components/CustomMobile/CustomMobile.js";
 import Textarea from "recruitment-components/Textarea/Textarea.js";
 import Button from "recruitment-components/Button/Button.js";
-import SingleSelect from "recruitment-components/SingleSelect/SingleSelect.js";
+// import SingleSelect from "recruitment-components/SingleSelect/SingleSelect.js";
 import Multiselect from "recruitment-components/MultiSelectDropDown/MultiSelectDropDown.js";
 import { FaEdit, FaTrashAlt, FaLock, FaLockOpen } from "react-icons/fa";
 
@@ -35,6 +35,31 @@ import {
 } from "recruitment-message";
 import { ALL_COUNTRIES } from "recruitment-countries";
 import { changingLanguageText } from "../../../../lib/utils/Service.js";
+import {
+  Box,
+  FormControl,
+  MenuItem,
+  Typography,
+  TextField,
+} from "@mui/material";
+import {
+  ManageJobsRow,
+  PageTitle,
+  UserImageOuter,
+  ColSm7,
+  FormTitle,
+  ColLg6,
+  OrganisationUnitSelect,
+  Label,
+  ColMd6,
+  EducationLevel,
+  SaveButton,
+  AutocompleteCity,
+  ColSm5,
+  FormTitleRight,
+  ColLg12,
+} from "./JobStyled.js";
+
 const ManageJobs = (props) => {
   const { userLanguage } = useContext(LanguageContext);
 
@@ -73,6 +98,7 @@ const ManageJobs = (props) => {
   const [email, setEmailAddress] = useState("");
   const [education, setEducation] = useState("");
   const [jobType, setJobType] = useState("sales");
+  // const [jobType, setJobType] = useState();
   const [profession, setProfession] = useState("");
   const [jobId, setJobId] = useState(JOB_ID);
   const [city, setCity] = useState("");
@@ -91,13 +117,13 @@ const ManageJobs = (props) => {
   const [parametersAdded, setParametersAdded] = useState([]);
   const [enData, setEnData] = useState([]);
   const [esData, setEsData] = useState([]);
-  const [phoneWithCountryCode, setPhoneWithCountryCode] = useState(""); 
+  const [phoneWithCountryCode, setPhoneWithCountryCode] = useState("");
 
   //params overlay
   const [showParamsToAdd, setShowParamsToAdd] = useState(false);
 
   const educationData = [
-    { name: "High School", id: "high-school" },
+    { name: "High School", id: "high school" },
     { name: "Undergraduate", id: "undergraduate" },
     { name: "Masters", id: "masters" },
     { name: "PhD", id: "phd" },
@@ -105,7 +131,7 @@ const ManageJobs = (props) => {
   const organisationUnit = [
     { name: "Sales", id: "sales" },
     { name: "Marketing", id: "marketing" },
-    { name: "Human Resources", id: "hr" },
+    { name: "Human Resources", id: "human resources" },
     { name: "IT", id: "it" },
     { name: "Finance", id: "finance" },
     { name: "Operations", id: "operations" },
@@ -118,13 +144,13 @@ const ManageJobs = (props) => {
     { name: "Moderate", id: "Moderate" },
     { name: "Limited", id: "Limited" },
     { name: "Adequate", id: "Adequate" },
-    { name: "High", id: "High" }
+    { name: "High", id: "High" },
   ];
   const newGradeSystemEs = [
     { name: "Moderado", id: "Moderado" },
     { name: "Limitado", id: "Limitado" },
     { name: "Adecuado", id: "Adecuado" },
-    { name: "Alto", id: "Alto" }
+    { name: "Alto", id: "Alto" },
   ];
 
   useEffect(() => {
@@ -132,13 +158,11 @@ const ManageJobs = (props) => {
       setShowFullPageLoader(true);
       getActiveParams();
 
-        if (id) {
-          let formData = { id: id };
+      if (id) {
+        let formData = { id: id };
         setsaveJobId(id);
         let job = await getJob(formData);
 
-
-        console.log(job, "ABCDEFGH")
         setJobname(job.name);
         setEducation(job.education);
         setJobId(job.job_id);
@@ -152,9 +176,6 @@ const ManageJobs = (props) => {
     };
     init();
   }, [userLanguage]);
-  
-  
-
 
   useEffect(() => {
     if (parameters) {
@@ -169,8 +190,8 @@ const ManageJobs = (props) => {
             lang: obj.language,
           });
         });
-        setEnData(tempArr?.filter(e => e?.lang === 'en'))
-        setEsData(tempArr?.filter(e => e?.lang === 'es'))
+        setEnData(tempArr?.filter((e) => e?.lang === "en"));
+        setEsData(tempArr?.filter((e) => e?.lang === "es"));
       }
       // tempArr.push({ name: "Create New Parameter", id: "create" });
       setParamsData(tempArr);
@@ -253,8 +274,6 @@ const ManageJobs = (props) => {
 
   //working on it
   const addParams = (id) => {
-
-    // console.log(id, "IDD")
     if (id == "create") {
       //here set ovevrlay to true
       setShowParamsToAdd(true);
@@ -263,12 +282,9 @@ const ManageJobs = (props) => {
 
     let arr = parametersAdded.length ? [...parametersAdded] : [];
 
-    let paramFound = parameters.find((e) => {  
-      return e._id == id 
-       
-      });
-
-      console.log(paramFound, "FOUND")
+    let paramFound = parameters.find((e) => {
+      return e._id == id;
+    });
 
     if (arr.length) {
       if (!arr.find((e) => e.id == id)) {
@@ -276,7 +292,7 @@ const ManageJobs = (props) => {
           id: id,
           name: paramFound?.name,
           // percentage: 1,
-          description: paramFound?.description,  
+          description: paramFound?.description,
         });
       }
     } else {
@@ -301,7 +317,6 @@ const ManageJobs = (props) => {
     let tmpArr = [...parametersAdded];
     tmpArr.map((obj, idx) => {
       if (obj.id == id) {
-        console.log(val, "VA:LLL")
         obj.value = val;
       }
     });
@@ -313,7 +328,7 @@ const ManageJobs = (props) => {
       name: <Text tid="job-name-description-text" />,
       sortable: false,
       cell: (data) => {
-        return data.name ;
+        return data.name;
       },
     },
 
@@ -321,12 +336,13 @@ const ManageJobs = (props) => {
       name: <Text tid="job-value-text" />,
       sortable: false,
       cell: (data) => {
-        console.log(data, "CELL DATA")
         return (
           <SingleSelect
             extraClasses={"gradeBox"}
             value={data.value}
-            options={(userLanguage === 'en' ? newGradeSystemEn : newGradeSystemEs )}
+            options={
+              userLanguage === "en" ? newGradeSystemEn : newGradeSystemEs
+            }
             changeOption={(id) => updatePercentage(id, data.id)}
             placeholder={"Value"}
           />
@@ -360,43 +376,31 @@ const ManageJobs = (props) => {
         <i className="uil uil-arrow-left" /> <Text tid="back-to-jobs-text" />
       </Link>
       {
-        <div className="pageTitle mb-4">
-          <div className="userImgOuter pt-3">
-            {avatar != "" ? (
-              <img
-                id="user-profile-avatar"
-                src={`data:image/svg+xml;base64,${btoa(
-                  unescape(encodeURIComponent(avatar))
-                )}`}
-              />
-            ) : (
-              <span style={{ background: 'url("/images/user.jpg")' }} />
-            )}
-            <Button
-              type={"top-button"}
-              extraClasses={`float-right ${
-                disableButton ? "loaderBtn disable" : ""
-              }`}
-              onClick={() => (disableButton ? "" : saveJob())}
-              label={<Text tid="save-change-button-text" />}
-              disableBtn={disableButton}
-            />
-            <h2>
-              {jobname} {lastname}
-            </h2>
-          </div>
-        </div>
+        <PageTitle>
+          <SaveButton
+            variant="contained"
+            type={"top-button"}
+            extraClasses={`float-right ${
+              disableButton ? "loaderBtn disable" : ""
+            }`}
+            onClick={() => (disableButton ? "" : saveJob())}
+            label={<Text tid="save-change-button-text" />}
+            disableBtn={disableButton}
+          >
+            Save Changes
+          </SaveButton>
+        </PageTitle>
       }
 
-      <div className="row">
-        <div className="col-sm-7">
-          <div className="formTitle">
-            <span>
+      <ManageJobsRow>
+        <ColSm7>
+          <FormTitle className="formTitle">
+            <Box component="span">
               <Text tid="job-details-text" />
-            </span>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
+            </Box>
+          </FormTitle>
+          <ManageJobsRow>
+            <ColLg6>
               <Input
                 label={<Text tid="job-name-text" />}
                 type={"text"}
@@ -406,8 +410,8 @@ const ManageJobs = (props) => {
                 placeholder={changingLanguageText("job-name-text")} // shows object
                 errorMessage={FIRSTNAME_ERROR_MESSAGE}
               />
-            </div>
-            <div className="col-lg-6">
+            </ColLg6>
+            <ColLg6>
               <SingleSelect
                 label={<Text tid="organisation-unit-text" />}
                 placeholder={<Text tid="organisation-unit-text" />} //works fine
@@ -415,19 +419,19 @@ const ManageJobs = (props) => {
                 changeOption={(id) => setJobType(id)}
                 value={jobType}
               />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
+            </ColLg6>
+          </ManageJobsRow>
+          <ManageJobsRow>
+            <ColLg6>
               <SingleSelect
                 label={<Text tid="education-level-text" />}
                 placeholder={<Text tid="education-level-text" />}
                 options={educationData ? educationData : []}
                 changeOption={(id) => setEducation(id)}
                 value={education}
-              />
-            </div>
-            <div className="col-lg-6">
+              ></SingleSelect>
+            </ColLg6>
+            <ColLg6>
               <Input
                 label={<Text tid="job-id-text" />}
                 type={"text"}
@@ -438,28 +442,22 @@ const ManageJobs = (props) => {
                 errorMessage={LASTNAME_ERROR_MESSAGE}
                 disabled={true}
               />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div>
-                <label className="fieldLabel">
-                  <Text tid="country-text" />
-                </label>
-                <div className={"formField"}>
-                  <Select
-                    label={<Text tid="country-text" />}
-                    placeholder={<Text tid="country-text" />}
-                    options={ALL_COUNTRIES ? ALL_COUNTRIES : []}
-                    onChange={handleChange}
-                    classNamePrefix={"cs-recruitment"}
-                    className={"custom-select-box"}
-                    value={country}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
+            </ColLg6>
+          </ManageJobsRow>
+          <ManageJobsRow>
+            <ColLg6>
+              <Box>
+                <Typography sx={{ color: "#fff" }}>Country</Typography>
+                <AutocompleteCity
+                  id="combo-box-demo"
+                  options={ALL_COUNTRIES}
+                  onChange={handleChange}
+                  sx={{ width: 300 }}
+                  renderInput={(params) => <TextField {...params} />}
+                />
+              </Box>
+            </ColLg6>
+            <ColLg6>
               <Input
                 label={<Text tid="city-text" />}
                 type={"text"}
@@ -469,27 +467,27 @@ const ManageJobs = (props) => {
                 placeholder={changingLanguageText("city-text")} // shows object
                 errorMessage={"City is required"}
               />
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-5">
-          <div className="formTitle-right">
-            <span>
+            </ColLg6>
+          </ManageJobsRow>
+        </ColSm7>
+        <ColSm5>
+          <FormTitleRight>
+            <Box component="span">
               <Text tid="add-parameter-text" />
-            </span>
-          </div>
-          <div className="row parameters-row">
-            <div className="col-lg-12">
+            </Box>
+          </FormTitleRight>
+          <ManageJobsRow className="row parameters-row">
+            <ColLg12 className="col-lg-12">
               <SingleSelect
                 label={<Text tid="parameters-text" />}
                 placeholder={<Text tid="parameters-text" />}
-                options={(userLanguage === 'en' ? enData : esData) }
+                options={userLanguage === "en" ? enData : esData}
                 changeOption={(id) => addParams(id)}
                 value={paramName}
                 classNamePrefix={"cs-recruitment"}
                 className={"custom-select-box"}
               />
-            </div>
+            </ColLg12>
 
             {parametersAdded.length > 0 && (
               <TableOne
@@ -499,10 +497,10 @@ const ManageJobs = (props) => {
                 pagination={false}
               />
             )}
-          </div>
-        </div>
+          </ManageJobsRow>
+        </ColSm5>
         <div className="col-sm-1 dividerOuter"></div>
-      </div>
+      </ManageJobsRow>
 
       {showDelete && (
         <Overlay

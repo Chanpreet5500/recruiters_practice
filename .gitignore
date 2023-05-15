@@ -6,8 +6,9 @@
 # Node artifact files
 node_modules/
 dist/
-.env
 
+#env file
+.env
 # Compiled Java class files
 *.class
 
@@ -65,4 +66,3 @@ yarn-error.log*
 /package-lock.json
 html/**/*.css
 html/**/*.css.map
-src/web/components/Sidebar/Sidebar.js

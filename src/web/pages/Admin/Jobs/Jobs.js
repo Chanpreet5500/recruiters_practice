@@ -17,13 +17,40 @@ import { Text } from "../../../../context/provider.js";
 import { changingLanguageText } from "../../../../lib/utils/Service.js";
 // import { components, Select } from "react-select";
 import Select from "react-select";
+import {
+  AddJobButton,
+  PurchaseTestButton,
+  JobsHeading,
+  JobHeadingChild,
+  TitleInfo,
+  SearchText,
+  SearchJobInput,
+  ProductRow,
+} from "./JobStyled.js";
+import AddIcon from "@mui/icons-material/Add";
+import LockIcon from "@mui/icons-material/Lock";
+import LockOpenIcon from "@mui/icons-material/LockOpen";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
+import EmailIcon from "@mui/icons-material/Email";
+import {
+  Box,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
+
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 
 import {
   FaEdit,
   FaTrashAlt,
   FaLock,
   FaLockOpen,
-  FaMailBulk,
   FaUserPlus,
 } from "react-icons/fa";
 import {
@@ -37,9 +64,12 @@ import {
   ERROR_INVALID_DOB,
   ERROR_INVALID_PHONE,
 } from "recruitment-message";
-import lodash from "lodash";
+import lodash, { set } from "lodash";
 import { uploadJobCSV } from "recruitment-api/AdminApi.js";
 import ResetIcon from "recruitment-images/refresh-arrows-circle-with-clockwise-rotation.svg";
+import CustomTable from "../../../components/CustomTable/CustomTable.js";
+import Datagrid from "../../../components/DataGrid/Datagrid.js";
+
 const Jobs = (props) => {
   const history = useHistory();
   let newRef = useRef(null);
@@ -49,6 +79,7 @@ const Jobs = (props) => {
   const [selectedJobs, setSelectedJobs] = useState([]);
   const [showOverlay, setShowOverlay] = useState(false);
   const [jobsData, setJobsData] = useState([]);
+  const [reusableData, setReusableData] = useState([]);
   const [showDelete, setShowDelete] = useState(false);
   const [showPurchaseOverlay, setShowPurchaseOverlay] = useState(false);
   const [deleteJobId, setDeleteJobId] = useState(0);
@@ -67,7 +98,7 @@ const Jobs = (props) => {
   const [candidatesData, setCandidatesData] = useState([]);
   const [pricesData, setPricesData] = useState([]);
 
-  const [comparedSkillsWithJobs, setComparedSkillsWithJobs ] = useState([])
+  const [comparedSkillsWithJobs, setComparedSkillsWithJobs] = useState([]);
 
   const products = useStoreState((state) => state.admin.products);
   const productPrices = useStoreState((state) => state.admin.productPrices);
@@ -75,13 +106,19 @@ const Jobs = (props) => {
   const jobs = useStoreState((state) => state.admin.jobs);
   const getJobs = useStoreActions((actions) => actions.admin.getJobs);
   const changeStatus = useStoreActions((actions) => actions.admin.changeStatus);
-  const jobChangeStatus = useStoreActions((actions) => actions.admin.jobChangeStatus);
+  const jobChangeStatus = useStoreActions(
+    (actions) => actions.admin.jobChangeStatus
+  );
   const getAllSkills = useStoreState((state) => state.admin.jobsParams?.skills);
-  
+
   const deleteJob = useStoreActions((actions) => actions.admin.deleteJob);
   const createJob = useStoreActions((actions) => actions.admin.createJob);
-  const createCheckoutSession = useStoreActions((actions) => actions.admin.createCheckoutSession);
-  const setAllSkills = useStoreActions((actions) => actions.admin.getJobsSkills );
+  const createCheckoutSession = useStoreActions(
+    (actions) => actions.admin.createCheckoutSession
+  );
+  const setAllSkills = useStoreActions(
+    (actions) => actions.admin.getJobsSkills
+  );
 
   const getCandidates = useStoreActions(
     (actions) => actions.admin.getCandidates
@@ -106,16 +143,15 @@ const Jobs = (props) => {
   // const skillsvalues = getAllSkills.map(e => e)
 
   let dragCounter = useRef(0);
-  const [ jobsSkills , setJobsSkills ] = useState(getAllSkills)
-  console.log(jobsSkills, "JOBSKILLS")
+  const [jobsSkills, setJobsSkills] = useState(getAllSkills);
 
   const newSkills = [];
 
- newSkills.push( getAllSkills?.map(e => {
-    return {value : e.name, label : e.name}
-   
- }))
-
+  newSkills.push(
+    getAllSkills?.map((e) => {
+      return { value: e.name, label: e.name };
+    })
+  );
 
   const [dragFileList, setDragFileList] = useState([]);
   const [stripeProducts, setStripeProducts] = useState([]);
@@ -149,7 +185,6 @@ const Jobs = (props) => {
     }
   }, [jobs]);
 
-
   useEffect(() => {
     if (products) {
       setStripeProducts(products);
@@ -163,6 +198,7 @@ const Jobs = (props) => {
   }, [candidates]);
 
   const changeJobStatus = async (jobId, status) => {
+    // console.log(jobId, status, 'from changeJobStatus')
     setShowFullPageLoader(true);
 
     await jobChangeStatus({ jobId, status, clientId });
@@ -202,7 +238,29 @@ const Jobs = (props) => {
     { name: "Operations", id: "operations" },
   ];
 
+  let ans = [];
+
+  useEffect(() => {
+    let show = [];
+    jobsData.filter((e) => {
+      return show.push({
+        id: e._id,
+        name: e.name,
+        organisationUnit: e.type,
+        education: e.education,
+        jobId: e.job_id,
+        status: e.status,
+      });
+    });
+    setReusableData(show);
+  }, [jobsData]);
+
+  // reusableData.map((e) => {
+  //   ans.push(Object.values(e));
+  // });
+
   const openInviteCandidate = (id) => {
+    console.log(id, "inviteCandidate");
     setJobId(id);
     let selJob = jobsData.find((e) => e._id == id);
     setSelectedJob(selJob);
@@ -229,14 +287,22 @@ const Jobs = (props) => {
         jobId: jobId,
         candidates: candidates,
         inviteText: inviteText,
-        clientId: clientId
+        clientId: clientId,
       });
       setShowFullPageLoader(false);
       closeInviteCandidate();
     } else {
-      toast.error(<ToastUI message={"You don't have enough tests to send invite. Please purchase tests first."} type={"Error"} />, {
-        toastId: 'toast-show'
-      });
+      toast.error(
+        <ToastUI
+          message={
+            "You don't have enough tests to send invite. Please purchase tests first."
+          }
+          type={"Error"}
+        />,
+        {
+          toastId: "toast-show",
+        }
+      );
       return false;
     }
   };
@@ -269,168 +335,188 @@ const Jobs = (props) => {
   };
 
   const handleChange = (options) => {
-    const x =  jobs.find((e) =>  e.parameters.name == options.value);
+    const x = jobs.find((e) => e.parameters.name == options.value);
     setComparedSkillsWithJobs(x);
-  }
+  };
 
   const reviewCart = () => {
     setShowReviewCart(true);
   };
 
   const checkout = async () => {
-    let url = await createCheckoutSession({ lineItems: stripeProducts, userId: clientId });
+    let url = await createCheckoutSession({
+      lineItems: stripeProducts,
+      userId: clientId,
+    });
     window.location.href = url;
   };
 
   const columns = [
     {
-
-      name: <Text tid="jobs-table-name-text" />,
-
-      name: <Text tid = 'name-text' />,
-
-      sortable: false,
-      cell: (comparedSkillsWithJobs,data) => { return (comparedSkillsWithJobs ? comparedSkillsWithJobs.name : data.name)},
+      field: "name",
+      headerName: "Name",
+      width: 360,
+      headerClassName: "backgroundColor",
     },
     {
-      name: <Text tid="jobs-table-organisation-text" />,
-      sortable: false,
-      cell: (data) => {
-        let type = organisationUnit.find((e) => e.id == data?.type);
-        return type ? type.name : "";
-      },
+      field: "organisationUnit",
+      headerName: "Organisation Unit",
+      width: 360,
+      headerClassName: "backgroundColor",
     },
     {
-      name: <Text tid="jobs-table-education-text" />,
-      sortable: false,
-      cell: (data) => {
-        let edu = educationData.find((e) => e.id == data?.education);
-        return edu ? edu.name : "";
-      },
+      field: "education",
+      headerName: "Education",
+      width: 360,
+      headerClassName: "backgroundColor",
     },
     {
-      name: <Text tid="table-jobid-text" />,
-      sortable: false,
-      cell: (data) => data.job_id,
+      field: "jobId",
+      headerName: "Job ID",
+      width: 360,
+      headerClassName: "backgroundColor",
     },
     {
-      name: "",
+      field: "Action",
+      headerName: "Action",
+      headerClassName: "backgroundColor",
+      width: 302,
       sortable: false,
-      cell: (data) => (
+      renderCell: (data) => (
         <>
           <Button
             type="icon-button"
             label={
-              <ToolTip note={data.status ? "Deactivate" : "Activate"}>
-                {data.status ? <FaLock className="activate" /> : <FaLockOpen className="deactivate"/>}
+              <ToolTip note={data.row.status ? "Deactivate" : "Activate"}>
+                {data.row.status ? (
+                  <LockIcon sx={{ color: "red" }} />
+                ) : (
+                  <LockOpenIcon sx={{ color: "red" }} />
+                )}
               </ToolTip>
             }
-            onClick={() => changeJobStatus(data._id, data.status ? 0 : 1)}
+            onClick={() => changeJobStatus(data.id, data.row.status ? 0 : 1)}
           />
           <Button
             type="icon-button"
             label={
               <ToolTip note="Delete Job">
-                <FaTrashAlt />
+                <DeleteIcon sx={{ color: "#000" }} />
               </ToolTip>
             }
-            onClick={() => deleteJobCall(data._id)}
+            onClick={() => deleteJobCall(data.id)}
           />
-
           <Button
             type="icon-button"
             label={
               <ToolTip note="Edit Job">
-                <FaEdit />
+                <EditIcon sx={{ color: "#000" }} />
               </ToolTip>
             }
-            onClick={() => editJob(data._id)}
+            onClick={() => editJob(data.id)}
           />
           <Button
             type="icon-button"
             label={
               <ToolTip note="Invite Candidates">
-                <FaUserPlus />
+                <PersonAddAltIcon sx={{ color: "#000" }} />
               </ToolTip>
             }
-            onClick={() => openInviteCandidate(data._id)}
+            onClick={() => openInviteCandidate(data.id)}
           />
         </>
       ),
-      center: false,
     },
   ];
 
   return (
     <React.Fragment>
       {showFullPageLoader && <CustomLoader />}
-      <div>
-        <div className="section pb-0">
-          <h1 className="pageTitle">
-            <span className="pr-4"><Text tid="jobs-text" /></span>
-            <button
-              className="topButton float-right"
-              onClick={() => goToUrl("/add-job")}
-            >
-              <i className="fa fa-plus-circle" /> <Text tid="add-job-text" />
-            </button>
+      <Box>
+        <Box>
+          <JobsHeading className="pageTitle">
+            <JobHeadingChild className="pr-4">
+              <Text tid="jobs-text" />
+            </JobHeadingChild>
+            <AddJobButton onClick={() => goToUrl("/add-job")}>
+              <AddIcon /> <Text tid="add-job-text" />
+            </AddJobButton>
 
-            <button
-              className="topButton float-right"
+            <PurchaseTestButton
+              // className="topButton float-right"
               onClick={() => setShowPurchaseOverlay(true)}
             >
-              <i className="fa fa-plus-circle" /> <Text tid="purchase-tests-text" />
-            </button>
-          </h1>
-          <p className="titleInfo">
+              <AddIcon /> <Text tid="purchase-tests-text" />
+            </PurchaseTestButton>
+          </JobsHeading>
+          <TitleInfo className="titleInfo">
             <Text tid="jobs-title-info-text" />
-          </p>
-        </div>
+          </TitleInfo>
+        </Box>
         {jobs?.length > 0 && (
-          <div className="search-text">
-            <Input
-              label={""}
+          <SearchText className="search-text">
+            <SearchJobInput
+              variant="filled"
+              label={changingLanguageText("search-job-text")}
+              InputProps={{ disableUnderline: true }}
               type={"text"}
               value={searchText}
-              handleInputChange={(e) => handleSearch(e.target.value)}
+              onChange={(e) => handleSearch(e.target.value)}
+              // placeholder={changingLanguageText('search-job')}
 
-              placeholder={changingLanguageText('search-job')}
-
-              placeholder={changingLanguageText('search-job-text')}
-
+              // placeholder={changingLanguageText("search-job-text")}
             />
+          </SearchText>
+        )}
+        <Box
+          sx={{
+            "& .backgroundColor": {
+              backgroundColor: "#91c6c8",
+              fontSize: "20px",
+              fontFamily: "Jost-Regular",
+            },
+          }}
+        >
+          <Datagrid
+            sx={{
+              border: "none",
+              backgroundColor: "#fff",
+              fontSize: "18px",
+            }}
+            data={reusableData ? reusableData : []}
+            columns={columns}
+          />
+        </Box>
+        {getAllSkills && (
+          <div>
+            {/* <h3>hello</h3> */}
+            {/* <Select  options={newSkills[0]} onChange={(e) => handleChange(e)}  isMulti/>  */}
           </div>
         )}
-        <TableOne columns={columns} data={jobsData} skills={comparedSkillsWithJobs} />
-        {getAllSkills && (
-                <div>
-                 {/* <h3>hello</h3> */}
-                 {/* <Select  options={newSkills[0]} onChange={(e) => handleChange(e)}  isMulti/>  */}
-                 </div>
-                )
-              }
-      </div>
+      </Box>
       {showDelete && (
         <Overlay
           title={"Are you sure?"}
           subTitle={confirmText}
           closeOverlay={() => setShowDelete(false)}
           cancelOverlay={() => setShowDelete(false)}
-          submitOverlay={() => { }}
+          submitOverlay={() => {}}
           disableBtn={disableButton}
         ></Overlay>
       )}
       {showInviteCandidate && (
         <Overlay
-          title={<Text tid="invite-candidate"/>}
-          subTitle={changingLanguageText('for-job-text') +  " " + `${selectedJob?.name}`}
+          title={<Text tid="invite-candidate" />}
+          subTitle={
+            changingLanguageText("for-job-text") + " " + `${selectedJob?.name}`
+          }
           closeOverlay={() => {
             closeInviteCandidate();
           }}
           cancelOverlay={() => {
             closeInviteCandidate();
           }}
-          submitOverlay={() => { }}
+          submitOverlay={() => {}}
           disableBtn={disableButton}
           footer={""}
           onClickFooter={() => {
@@ -447,15 +533,15 @@ const Jobs = (props) => {
       )}
       {showPurchaseOverlay && (
         <Overlay
-        title={<Text tid = "Purchase-test" />}
-        subTitle={<Text tid = "Enter-qun.-to-purchase" />}
+          title={<Text tid="Purchase-test" />}
+          subTitle={<Text tid="Enter-qun.-to-purchase" />}
           closeOverlay={() => {
             closePurchaseOverlay();
           }}
           cancelOverlay={() => {
             closePurchaseOverlay();
           }}
-          submitOverlay={() => { }}
+          submitOverlay={() => {}}
           disableBtn={disableButton}
           footer={""}
           showActions={false}
@@ -470,11 +556,14 @@ const Jobs = (props) => {
                     return false;
 
                   return (
-                    <div
-                      className="product-row"
+                    <ProductRow
                     /*onClick={() => getPrices(obj.id)}*/
                     >
-                      <div className="image">
+                      <div
+                        // component="img"
+                        className="image"
+                        // src={obj?.product?.image[0]}
+                      >
                         <img src={obj?.product?.images[0]} />
                       </div>
                       <div className="product-info">
@@ -492,17 +581,17 @@ const Jobs = (props) => {
                           type={"text"}
                           value={obj.qty}
                           handleInputChange={(e) => handleQtyChange(e, obj.id)}
-                          placeholder={changingLanguageText('Enter-qty.')}
+                          placeholder={changingLanguageText("Enter-qty.")}
                           key={"price-" + obj.id}
                         />
                       </div>
-                    </div>
+                    </ProductRow>
                   );
                 })}
               {qtyToPurchase > 0 && (
                 <div
                   className="product-row"
-                /*onClick={() => getPrices(obj.id)}*/
+                  /*onClick={() => getPrices(obj.id)}*/
                 >
                   <Button
                     type="blue-button"
@@ -514,40 +603,44 @@ const Jobs = (props) => {
             </>
           ) : (
             <div className="product-review-container">
-
               <div className="product-row header">
-                <div><Text tid="product-name-text" /></div>
-                <div><Text tid="price-text" /></div>
-                <div><Text tid="quantity-text" /></div>
-                <div><Text tid="total-text" /></div>
+                <div>
+                  <Text tid="product-name-text" />
+                </div>
+                <div>
+                  <Text tid="price-text" />
+                </div>
+                <div>
+                  <Text tid="quantity-text" />
+                </div>
+                <div>
+                  <Text tid="total-text" />
+                </div>
               </div>
-              {selectedProduct == "" &&
-                stripeProducts?.length > 0 &&
+              {selectedProduct == "" && stripeProducts?.length > 0 && (
                 <>
-                  {
-                    stripeProducts.map((obj, idx) => {
-                      if (
-                        obj.unit_amount == 0 ||
-                        obj.unit_amount == null ||
-                        !obj.qty
-                      )
-                        return false;
+                  {stripeProducts.map((obj, idx) => {
+                    if (
+                      obj.unit_amount == 0 ||
+                      obj.unit_amount == null ||
+                      !obj.qty
+                    )
+                      return false;
 
-                      return (
-                        <>
-                          <div
-                            className="product-row"
+                    return (
+                      <>
+                        <div
+                          className="product-row"
                           /*onClick={() => getPrices(obj.id)}*/
-                          >
-                            <div>{obj.product.name}</div>
-                            <div>${obj.unit_amount / 100}</div>
-                            <div>{obj.qty}</div>
-                            <div>${(obj.unit_amount / 100) * obj.qty}</div>
-                          </div>
-                        </>
-                      );
-                    })
-                  }
+                        >
+                          <div>{obj.product.name}</div>
+                          <div>${obj.unit_amount / 100}</div>
+                          <div>{obj.qty}</div>
+                          <div>${(obj.unit_amount / 100) * obj.qty}</div>
+                        </div>
+                      </>
+                    );
+                  })}
                   <div className="product-row footer">
                     <Button
                       type="blue-button"
@@ -556,11 +649,10 @@ const Jobs = (props) => {
                     />
                   </div>
                 </>
-              }
+              )}
             </div>
           )}
         </Overlay>
-
       )}
     </React.Fragment>
   );

@@ -82,7 +82,6 @@ export const csvFileToArray = (file, delimiter = ',', omitFirstRow = false) => {
 
 export const changingLanguageText = (tidName) => {
   const activeLang = localStorage.getItem('rcml-lang')
-  console.log(activeLang);
   const languageText = activeLang == 'es' ? esData : enData
   return languageText[tidName];
 }

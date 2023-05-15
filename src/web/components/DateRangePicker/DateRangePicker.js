@@ -12,7 +12,7 @@ const DateRangePickerComp = (props) => {
   return (
     <React.Fragment>
      <div className="formFieldOuter">
-        {/* <label className="fieldLabel">{props.label}</label> */}
+        <label className="fieldLabel">{props.label}</label>
 
         <div className="formField">
             <DateRangePicker
