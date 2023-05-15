@@ -52,7 +52,13 @@ import {
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 import BarChartIcon from "@mui/icons-material/BarChart";
-import { Box, CircularProgress, Divider, Typography } from "@mui/material";
+import {
+  Box,
+  CircularProgress,
+  Divider,
+  Skeleton,
+  Typography,
+} from "@mui/material";
 import List from "./List";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -91,7 +97,9 @@ const Sidebar = (props) => {
     (actions) => actions.authentication.logoutUser
   );
   const [showSubmenu, setShowSubMenu] = useState(false);
-  const [hideLeftSection, setHideLeftSection] = useState(true);
+  const [hideLeftSection, setHideLeftSection] = useState(
+    localStorage.getItem("leftSection") == "true" ? true : false
+  );
   const [menu, setMenu] = useState("");
   const [loggedInUser, setLoggedInUser] = useState({});
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -111,14 +119,13 @@ const Sidebar = (props) => {
       setHideLeftSection(
         localStorage.getItem("leftSection") == "true" ? true : false
       );
-      console.log('true in useeffect' )
-      
+      console.log("true in useeffect");
     }
     // else {
     //   console.log('false in useeffect' )
     //   localStorage.setItem("leftSection",hideLeftSection);
     // }
-  },[]);
+  }, []);
 
   // useEffect(() => {
   //   localStorage.setItem("leftSection", hideLeftSection);
@@ -185,7 +192,7 @@ const Sidebar = (props) => {
   // set selected language by calling context method
   const handleLanguageChange = (id) => userLanguageChange(id);
   const haldleLeftSelection = () => {
-    localStorage.setItem("leftSection",!hideLeftSection);
+    localStorage.setItem("leftSection", !hideLeftSection);
     props.handleSidebar(!hideLeftSection);
     setHideLeftSection(!hideLeftSection);
   };
@@ -207,7 +214,7 @@ const Sidebar = (props) => {
         open={JSON.parse(localStorage.getItem("leftSection"))}
         // onClose={!JSON.parse(localStorage.getItem("leftSection"))}
         elevation={20}
-        hideBackdrop={true}
+        // hideBackdrop={true}
         PaperProps={{
           sx: {
             width: hideLeftSection ? "90px" : "291px",
@@ -258,19 +265,40 @@ const Sidebar = (props) => {
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
-          <OnlineBadge variant="dot" overlap="circular" color="success">
-            <UserImage src="/images/user.jpg" />
-          </OnlineBadge>
+          {loggedInUser.firstname ? (
+            <OnlineBadge variant="dot" overlap="circular" color="success">
+              <UserImage src="/images/user.jpg" />
+            </OnlineBadge>
+          ) : (
+            <Skeleton
+              animation="wave"
+              variant="circular"
+              width={50}
+              height={50}
+            />
+          )}
           <UserBox sx={{ display: hideLeftSection ? "none" : "block" }}>
             <UserName>
-              {loggedInUser.firstname
-                ? loggedInUser.firstname + " " + loggedInUser.lastname
-                : ""}
+              {loggedInUser.firstname ? (
+                loggedInUser.firstname + " " + loggedInUser.lastname
+              ) : (
+                <Skeleton width={170} />
+              )}
             </UserName>
-            <TestText>{`Total tests available - ${loggedInUser.totalTests}`}</TestText>
+            {loggedInUser.firstname ? (
+              <TestText>{`Total tests available - ${loggedInUser.totalTests}`}</TestText>
+            ) : (
+              <TestText>
+                <Skeleton width={170} />
+              </TestText>
+            )}
           </UserBox>
-          {!hideLeftSection && !open && <DownArrowIcon />}
-          {!hideLeftSection && open && <UpArrowIcon />}
+          {loggedInUser && (
+            <>
+              {!hideLeftSection && !open && <DownArrowIcon />}
+              {!hideLeftSection && open && <UpArrowIcon />}
+            </>
+          )}
         </Box>
         <ModalBox
           id="demo-positioned-menu"
