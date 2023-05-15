@@ -1,21 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import React from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import {
+  ErrorMessageBox,
+  IconBox,
+  InputBoxMain,
+  InputTextField,
+  TypographyLabel,
+  TypographySpan,
+} from "./InputStyled";
+import { Box, TextField, Typography } from "@mui/material";
 
 const Input = (props) => {
   return (
     <React.Fragment>
-      <div className="formFieldOuter">
-        <label className="fieldLabel">{props.label}</label>
+      <InputBoxMain>
+        <TypographyLabel>{props.label}</TypographyLabel>
 
-        <div className="formField">
-          <input
+        <Box sx={{ position: "relative", width: "100%" }}>
+          <InputTextField
+            disableUnderline={true}
             type={props.type}
-            className={props.error ? "fieldInput error" : "fieldInput"}
+            // inputProps={{
+            //   sx: {
+            //     "&::placeholder": {
+            //       color: "#0c0058",
+            //       opacity: 1,
+            //       fontSize: "15px",
+            //     },
+            //   },
+            // }}
+            sx={{
+              ".MuiInputBase-input":{
+                border:props.error? '2px solid #ed6363':'' 
+              }
+            }}
+            // sx={props.error ? { border: "1px solid #ed6363" } : ""}
+            // className={props.error ? "fieldInput error" : "fieldInput"}
             name={props.name}
             value={props.value}
             onChange={(e) => props.handleInputChange(e)}
-            onKeyPress={(e) => props.handleInputKeyPress ? props.handleInputKeyPress(e) : () => { }}
+            onKeyPress={(e) =>
+              props.handleInputKeyPress
+                ? props.handleInputKeyPress(e)
+                : () => {}
+            }
             onFocus={props.handleInputFocus}
             onBlur={props.handleInputBlur}
             placeholder={props.placeholder}
@@ -23,24 +51,25 @@ const Input = (props) => {
             autocomplete={props.autoComplete ? props.autoComplete : true}
             key={props.key}
           />
-          {
-            props.showIcon &&
-            <div className="icon" onClick={() => props.iconClickHandler()}>
-              {props.iconName == 'fa-eye' && <FaEye />}
+          {props.showIcon && (
+            <IconBox onClick={() => props.iconClickHandler()}>
+              {props.iconName == "fa-eye" && <FaEye />}
 
-              {props.iconName == 'fa-eye-slash' && <FaEyeSlash />}
-            </div>
-          }
+              {props.iconName == "fa-eye-slash" && <FaEyeSlash />}
+            </IconBox>
+          )}
 
-          {props.error &&
-            <div className="errorMsg">
-              <span>!</span>
-              <label>{props.errorMessage}</label>
-            </div>
-          }
+          {props.error && (
+            <ErrorMessageBox>
+              <TypographySpan>!</TypographySpan>
+              <Typography sx={{ paddingTop: "4px", fontSize: "14px" }}>
+                {props.errorMessage}
+              </Typography>
+            </ErrorMessageBox>
+          )}
           {props.children}
-        </div>
-      </div>
+        </Box>
+      </InputBoxMain>
     </React.Fragment>
   );
 };

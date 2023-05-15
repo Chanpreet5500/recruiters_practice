@@ -4,6 +4,7 @@ import Routes from 'recruitment-routes'
 import history from 'recruitment-history'
 import "recruitment-theme/css/unicons.css";
 import "recruitment-theme/css/tabler-icons.css";
+import "../src/web/theme/css/custom-comp.css"
 import "./index.scss";
 import { ToastContainer} from "react-toastify";
 import { LanguageProvider } from "./context/provider";

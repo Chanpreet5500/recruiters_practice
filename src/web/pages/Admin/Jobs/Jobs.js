@@ -351,92 +351,6 @@ const Jobs = (props) => {
     window.location.href = url;
   };
 
-  const columns_bak = [
-    {
-      name: <Text tid="jobs-table-name-text" />,
-
-      name: <Text tid="name-text" />,
-
-      sortable: false,
-      cell: (comparedSkillsWithJobs, data) => {
-        return comparedSkillsWithJobs ? comparedSkillsWithJobs.name : data.name;
-      },
-    },
-    {
-      name: <Text tid="jobs-table-organisation-text" />,
-      sortable: false,
-      cell: (data) => {
-        let type = organisationUnit.find((e) => e.id == data?.type);
-        return type ? type.name : "";
-      },
-    },
-    {
-      name: <Text tid="jobs-table-education-text" />,
-      sortable: false,
-      cell: (data) => {
-        let edu = educationData.find((e) => e.id == data?.education);
-        return edu ? edu.name : "";
-      },
-    },
-    {
-      name: <Text tid="table-jobid-text" />,
-      sortable: false,
-      cell: (data) => data.job_id,
-    },
-    {
-      name: "",
-      sortable: false,
-      cell: (data) => (
-        <>
-          <Button
-            type="icon-button"
-            label={
-              <ToolTip note={data.status ? "Deactivate" : "Activate"}>
-                {data.status ? (
-                  <FaLock className="activate" />
-                ) : (
-                  <FaLockOpen className="deactivate" />
-                )}
-              </ToolTip>
-            }
-            onClick={() => changeJobStatus(data._id, data.status ? 0 : 1)}
-          />
-          <Button
-            type="icon-button"
-            label={
-              <ToolTip note="Delete Job">
-                <FaTrashAlt />
-              </ToolTip>
-            }
-            onClick={() => deleteJobCall(data._id)}
-          />
-
-          <Button
-            type="icon-button"
-            label={
-              <ToolTip note="Edit Job">
-                <FaEdit />
-              </ToolTip>
-            }
-            onClick={() => editJob(data._id)}
-          />
-          <Button
-            type="icon-button"
-            label={
-              <ToolTip note="Invite Candidates">
-                <FaUserPlus />
-              </ToolTip>
-            }
-            onClick={() => openInviteCandidate(data._id)}
-          />
-        </>
-      ),
-      center: false,
-    },
-  ];
-
-  // console.log(jobsData, "=> Jobs Data");
-
   const columns = [
     {
       field: "name",
@@ -515,9 +429,6 @@ const Jobs = (props) => {
     },
   ];
 
-  console.log(reusableData, "array");
-  console.log(columns, "columns");
-
   return (
     <React.Fragment>
       {showFullPageLoader && <CustomLoader />}
@@ -557,13 +468,6 @@ const Jobs = (props) => {
             />
           </SearchText>
         )}
-        {/* <CustomTable
-          columns={tableHeadings}
-          data={ans}
-          rowSx={{ backgroundColor: "#91c6c8" }}
-          rowCellSx={{ fontSize: "20px" }}
-          bodyCellSx={{ fontSize: "18px" }}
-        /> */}
         <Box
           sx={{
             "& .backgroundColor": {
@@ -581,116 +485,8 @@ const Jobs = (props) => {
             }}
             data={reusableData ? reusableData : []}
             columns={columns}
-            // pageSize={5}
-            // rowsPerPageOptions={[5]}
-            // checkboxSelection
-            // disableSelectionOnClick
-            // experimentalFeatures={{ newEditingApi: true }}
           />
         </Box>
-        {/* <TableContainer component={Paper}>
-          <Table aria-label="simple-table">
-            <TableHead
-              sx={{
-                backgroundColor: "#91c6c8",
-              }}
-            >
-              <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Organisation Unit</TableCell>
-                <TableCell>Education</TableCell>
-                <TableCell>Job ID</TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody
-              sx={{
-                backgroundColor: "white",
-                textTransform: "capitalize",
-                width: "80%",
-              }}
-            >
-              {jobsData.map((jobData) => {
-                return (
-                  <TableRow
-                    key={jobData._id}
-                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                  >
-                    <TableCell component="th" scope="row">
-                      {jobData.name}
-                    </TableCell>
-                    <TableCell>{jobData.type}</TableCell>
-                    <TableCell>{jobData.education}</TableCell>
-                    <TableCell>{jobData.job_id}</TableCell>
-                    <TableCell sx={{ width: "10px" }}>
-                      {" "}
-                      <Button
-                        type="icon-button"
-                        label={
-                          <ToolTip
-                            note={jobData.status ? "Deactivate" : "Activate"}
-                          >
-                            {jobData.status ? (
-                              <LockIcon sx={{ color: "red" }} />
-                            ) : (
-                              <LockOpenIcon sx={{ color: "red" }} />
-                            )}
-                          </ToolTip>
-                        }
-                        onClick={() =>
-                          changeJobStatus(jobData._id, jobData.status ? 0 : 1)
-                        }
-                      />
-                    </TableCell>
-                    <TableCell sx={{ width: "10px" }}>
-                      <Button
-                        type="icon-button"
-                        label={
-                          <ToolTip note="Delete Job">
-                            <DeleteIcon sx={{ color: "#000" }} />
-                          </ToolTip>
-                        }
-                        onClick={() => deleteJobCall(jobData._id)}
-                      />
-                    </TableCell>
-                    <TableCell sx={{ width: "10px" }}>
-                      {" "}
-                      <Button
-                        type="icon-button"
-                        label={
-                          <ToolTip note="Edit Job">
-                            <EditIcon sx={{ color: "#000" }} />
-                          </ToolTip>
-                        }
-                        onClick={() => editJob(jobData._id)}
-                      />
-                    </TableCell>
-                    <TableCell sx={{ width: "10px" }}>
-                      {" "}
-                      <Button
-                        type="icon-button"
-                        label={
-                          <ToolTip note="Invite Candidates">
-                            <PersonAddAltIcon sx={{ color: "#000" }} />
-                          </ToolTip>
-                        }
-                        onClick={() => openInviteCandidate(jobData._id)}
-                      />
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </TableContainer> */}
-        {/* <TableOne
-          columns={columns}
-          data={jobsData}
-          skills={comparedSkillsWithJobs}
-        /> */}
         {getAllSkills && (
           <div>
             {/* <h3>hello</h3> */}
