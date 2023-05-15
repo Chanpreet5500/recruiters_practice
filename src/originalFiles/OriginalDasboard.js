@@ -27,18 +27,7 @@ import { useHistory } from "react-router-dom";
 import CustomLoader from "recruitment-components/CustomLoader/CustomLoader.js";
 import BarGraph from "recruitment-components/Graphs/Bar/Bar.js";
 import DateRangePickerComp from "recruitment-components/DateRangePicker/DateRangePicker.js";
-import { Text } from "../../../context/provider";
-import {
-  ChartContainer,
-  DateTypography,
-  FormField,
-  GreetingHeading,
-  InputField,
-  MainContainer,
-  RangePickerContainer,
-  TittleInfo,
-} from "./DashboardStyling";
-import { Box } from "@mui/material";
+import { Text } from "../../../context/provider"
 
 const data = [
   {
@@ -173,21 +162,21 @@ const Dashboard = (props) => {
   const [weeklyPerformance, setWeeklyPerformance] = useState({});
 
   useEffect(() => {
-    const checkIfClickedOutside = (e) => {
+    const checkIfClickedOutside = e => {
       // If the menu is open and the clicked target is not within the menu,
       // then close the menu
       if (showRangePicker && ref.current && !ref.current.contains(e.target)) {
-        setShowRangePicker(false);
+        setShowRangePicker(false)
       }
-    };
+    }
 
-    document.addEventListener("mousedown", checkIfClickedOutside);
+    document.addEventListener("mousedown", checkIfClickedOutside)
 
     return () => {
       // Cleanup the event listener
-      document.removeEventListener("mousedown", checkIfClickedOutside);
-    };
-  }, [showRangePicker]);
+      document.removeEventListener("mousedown", checkIfClickedOutside)
+    }
+  }, [showRangePicker])
 
   useEffect(() => {
     let user = JSON.parse(localStorage.getItem("loggedInUser"));
@@ -214,18 +203,19 @@ const Dashboard = (props) => {
       createDataForTestPurchased(testPurchased);
       // let clients = dashboardData.clients;
       // createDataForClients(clients);
+
     }
   }, [dashboardData]);
 
   const createDataForJobs = (jobs) => {
-    let graphData = [];
-    let total = 0;
+    let graphData = []
+    let total = 0
     jobs.map((obj, idx) => {
-      graphData.push({ name: obj._id, jobs: obj.count });
-      total += obj.count;
-    });
+      graphData.push({ name: obj._id, jobs: obj.count })
+      total += obj.count
+    })
     setJobsData({ graphVal: graphData, totalCount: total });
-  };
+  }
   // const createDataForClients = (clients) => {
   //   console.log("123", clients);
   //   let graphData = []
@@ -238,29 +228,28 @@ const Dashboard = (props) => {
   // }
 
   const createDataForCandidates = (candidatesPerJob) => {
-    let graphData = [];
-    let total = 0;
+    let graphData = []
+    let total = 0
     candidatesPerJob.map((obj, idx) => {
-      graphData.push({ name: obj.name, candidates: obj.candidates });
-      total += obj.candidates;
-    });
+      graphData.push({ name: obj.name, candidates: obj.candidates })
+      total += obj.candidates
+    })
     setCandidatesData({ graphVal: graphData, totalCount: total });
-  };
+  }
+
 
   const createDataForTestPurchased = (testPurchased) => {
-    let graphData = [];
-    let total = 0;
+    let graphData = []
+    let total = 0
     if (testPurchased) {
       testPurchased.map((obj, idx) => {
-        graphData.push({
-          name: obj._id,
-          totalTestPurchased: obj.totalTestPurchased,
-        });
-        total += obj.totalTestPurchased;
-      });
+        graphData.push({ name: obj._id, totalTestPurchased: obj.totalTestPurchased })
+        total += obj.totalTestPurchased
+      })
       setTestPurchasedData({ graphVal: graphData, totalCount: total });
     }
-  };
+  }
+
 
   useEffect(() => {
     var today = new Date();
@@ -303,46 +292,59 @@ const Dashboard = (props) => {
     await getDashboardData({
       startDate: format(startDate, apiFormat),
       endDate: format(endDate, apiFormat),
-      clientId: clientId,
+      clientId: clientId
     });
-    if (startDate != endDate) setShowRangePicker(false);
+    if (startDate != endDate)
+      setShowRangePicker(false)
   };
   return (
     <React.Fragment>
-      <DateTypography>{todayDate}</DateTypography>
-      <GreetingHeading>{greeting()}</GreetingHeading>
-      <TittleInfo>
-        <Text tid="title-info-text" />
-      </TittleInfo>
-      <TittleInfo>
+      {/* { customLoader &&
+        <CustomLoader />
+      } */}
+      <div className="goBack backToClass">{todayDate}</div>
+      <h1 className="pageTitle">
+        {greeting()} <b>{forename}</b>
+        <div className="exportDataOuter">
+          <button className="topButton d-none float-right">
+            <img src="images/export.png" /> < Text tid="export-text" />
+          </button>
+          <div className="formFieldOuter d-none dateTrem">
+            <label className="fieldLabel"><Text tid="data-term-text" /></label>
+            <div className="formField">
+              <input
+                type="text"
+                className="fieldInput"
+                placeholder="Jan - Mar 2021"
+              />
+              <i className="uil uil-angle-down arrow" />
+            </div>
+          </div>
+        </div>
+      </h1>
+      <p className="titleInfo"><Text tid="title-info-text" /></p>
+      <p className="titleInfo">
         <Text tid="Data-Range-shown-text" />
-        <Box>
-          <InputField
-            InputProps={{
-              style: { color: "#0c0058", fontFamily: "Jost-Regular" },
-            }}
+        <div className="formField">
+          <input
             type="text"
-            size={"small"}
+            className="fieldInput"
             placeholder="Jan - Mar 2021"
-            value={`${format(
-              selectionRange.startDate,
-              viewFormat
-            )}  -  ${format(selectionRange.endDate, viewFormat)}`}
+            value={`${format(selectionRange.startDate, viewFormat)}  -  ${format(selectionRange.endDate, viewFormat)}`}
             onClick={() => setShowRangePicker(true)}
           />
-        </Box>
-        {showRangePicker && (
-          <RangePickerContainer ref={ref}>
+        </div>
+        {showRangePicker &&
+          <div ref={ref} className="rangePickerContainer">
             <DateRangePickerComp
               selectionRange={selectionRange}
               handleSelect={handleDurationChange}
             />
-          </RangePickerContainer>
-        )}
-      </TittleInfo>
-
-      <MainContainer>
-        <ChartContainer>
+          </div>
+        }
+      </p>
+      <div className="row dashboardSectionRow">
+        <div className="col-xl-6 col-md-6 col-12">
           <BarGraph
             data={jobsData.graphVal}
             totalCount={jobsData.totalCount}
@@ -352,8 +354,8 @@ const Dashboard = (props) => {
             colorCode={"#8884d8"}
             handleDurationChange={handleDurationChange}
           />
-        </ChartContainer>
-        <ChartContainer>
+        </div>
+        <div className="col-xl-6 col-md-6 col-12">
           <BarGraph
             data={candidatesData.graphVal}
             totalCount={candidatesData.totalCount}
@@ -363,8 +365,8 @@ const Dashboard = (props) => {
             colorCode={"#B84F39"}
             handleDurationChange={handleDurationChange}
           />
-        </ChartContainer>
-        <ChartContainer>
+        </div>
+        <div className="col-xl-6 col-md-12">
           <BarGraph
             data={testPurchasedData.graphVal}
             totalCount={testPurchasedData.totalCount}
@@ -374,8 +376,8 @@ const Dashboard = (props) => {
             colorCode={"#8884d8"}
             handleDurationChange={handleDurationChange}
           />
-        </ChartContainer>
-        <ChartContainer>
+        </div>
+        <div className="col-xl-6 col-md-12">
           <BarGraph
             data={data}
             // totalCount={cientsData.totalCount}
@@ -385,8 +387,8 @@ const Dashboard = (props) => {
             colorCode={"#F8C7BC"}
             handleDurationChange={handleDurationChange}
           />
-        </ChartContainer>
-      </MainContainer>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

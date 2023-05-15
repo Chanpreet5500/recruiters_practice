@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { validateEmail } from "recruitment-utils/Validators.js";
 import { useStoreActions, useStoreState } from "easy-peasy";
-import { logoutCompletely } from "recruitment-utils/Service.js";
+import { logoutCompletely } from 'recruitment-utils/Service.js';
 
 import Overlay from "recruitment-components/Overlay/Overlay.js";
 import TableOne from "recruitment-components/TableOne/TableOne.js";
@@ -16,7 +16,7 @@ import ToastUI from "recruitment-components/ToastUI/ToastUI.js";
 import Input from "recruitment-components/Input/Input.js";
 
 // import { Text } from "../../context/provider"
-import { Text } from "../../../src/context/provider";
+import { Text } from "../../../src/context/provider"
 
 // import AssigningCandidate from "./AssigningCandidate.js";
 import {
@@ -43,28 +43,7 @@ import { uploadJobCSV } from "recruitment-api/AdminApi.js";
 import ResetIcon from "recruitment-images/refresh-arrows-circle-with-clockwise-rotation.svg";
 
 import { changingLanguageText } from "../../lib/utils/Service";
-import { Box, Table, TableContainer, TableHead } from "@mui/material";
-import {
-  ButtonContainer,
-  ButtonPurchaseContainer,
-  Buttons,
-  CustomCell,
-  CustomRow,
-  Heading,
-  HeadingBox,
-  ImageContainer,
-  InputContainer,
-  ProductDescription,
-  ProductDetailContainer,
-  ProductName,
-  ProductPrice,
-  TableHeader,
-  TypographyText,
-  Image,
-  MainContainer,
-} from "./AccountsStyled";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
-import { AddCircle } from "@mui/icons-material";
+
 const Accounts = (props) => {
   const history = useHistory();
   let newRef = useRef(null);
@@ -103,18 +82,10 @@ const Accounts = (props) => {
   const changeStatus = useStoreActions((actions) => actions.admin.changeStatus);
   const deleteJob = useStoreActions((actions) => actions.admin.deleteJob);
   const createJob = useStoreActions((actions) => actions.admin.createJob);
-  const getAllTransactions = useStoreActions(
-    (actions) => actions.admin.getAllTransactions
-  );
-  const createCheckoutSession = useStoreActions(
-    (actions) => actions.admin.createCheckoutSession
-  );
-  const deactivateAccount = useStoreActions(
-    (actions) => actions.admin.deactivateAccount
-  );
-  const logoutUser = useStoreActions(
-    (actions) => actions.authentication.logoutUser
-  );
+  const getAllTransactions = useStoreActions((actions) => actions.admin.getAllTransactions);
+  const createCheckoutSession = useStoreActions((actions) => actions.admin.createCheckoutSession);
+  const deactivateAccount = useStoreActions((actions) => actions.admin.deactivateAccount);
+  const logoutUser = useStoreActions((actions) => actions.authentication.logoutUser);
   const getCandidates = useStoreActions(
     (actions) => actions.admin.getCandidates
   );
@@ -157,24 +128,27 @@ const Accounts = (props) => {
     let tests = userProfile ? userProfile.totalTests : user.totalTests;
     setTotalTests(tests);
     setClientId(cId);
-    getAllTransactions({ id: cId });
-    if (!products) {
+    getAllTransactions({id: cId});
+    if(!products) {
       getStripeProducts();
     }
     //getStripeProducts();
   }, []);
 
   useEffect(() => {
-    if (transactions) {
-      setTransactionData(transactions);
-    }
+      if (transactions) {
+          setTransactionData(transactions)
+      }
   }, [transactions]);
+
+
 
   useEffect(() => {
     if (products) {
       setStripeProducts(products);
     }
   }, [products]);
+
 
   const changeJobStatus = async (jobId, status) => {
     setShowFullPageLoader(true);
@@ -236,28 +210,20 @@ const Accounts = (props) => {
   };
 
   const handleSendInvite = async (candidates, inviteText) => {
-    if (totalTests > 0) {
+    if(totalTests > 0) {
       setShowFullPageLoader(true);
       let response = await sendInviteToCandidate({
         jobId: jobId,
         candidates: candidates,
         inviteText: inviteText,
-        clientId: clientId,
+        clientId: clientId
       });
       setShowFullPageLoader(false);
-      closeInviteCandidate();
+      closeInviteCandidate();      
     } else {
-      toast.error(
-        <ToastUI
-          message={
-            "You don't have enough tests to send invite. Please purchase tests first."
-          }
-          type={"Error"}
-        />,
-        {
-          toastId: "toast-show",
-        }
-      );
+      toast.error(<ToastUI message={"You don't have enough tests to send invite. Please purchase tests first."} type={"Error"} />, {
+        toastId: 'toast-show'
+      });
       return false;
     }
   };
@@ -294,10 +260,7 @@ const Accounts = (props) => {
   };
 
   const checkout = async () => {
-    let url = await createCheckoutSession({
-      lineItems: stripeProducts,
-      userId: clientId,
-    });
+    let url = await createCheckoutSession({lineItems : stripeProducts, userId: clientId});
     window.location.href = url;
   };
 
@@ -306,11 +269,11 @@ const Accounts = (props) => {
       name: <Text tid="table-testpurchades-text" />,
       sortable: false,
       cell: (data) => {
-        return data.tests_purchased;
+          return data.tests_purchased;
       },
     },
     {
-      name: <Text tid="table-date-text" />,
+      name:  <Text tid="table-date-text" />,
       sortable: false,
       cell: (data) => {
         return data.date_created;
@@ -320,67 +283,64 @@ const Accounts = (props) => {
       name: <Text tid="table-amount-text" />,
       sortable: false,
       cell: (data) => {
-        return "$" + (data.total_amount / 100).toFixed(2);
+        return "$"+((data.total_amount/100).toFixed(2));
       },
     },
     {
       name: <Text tid="table-status-text" />,
       sortable: false,
       cell: (data) => {
-        return data.status.toUpperCase();
+        return data.status.toUpperCase(); 
       },
     },
   ];
 
   const handleDeactivate = async () => {
-    let res = await deactivateAccount({ id: clientId });
-    if (res) {
-      let response = await logoutUser({ email: userProfile.email });
+    let res = await deactivateAccount({id: clientId});
+    if(res) {
+      let response = await logoutUser({email:userProfile.email});
       if (response) {
         logoutCompletely();
-        history.push("/login");
-      } else {
+        history.push('/login');
+      }  else {
         logoutCompletely();
-        history.push("/login");
-      }
+        history.push('/login');
+      }   
     }
-  };
+
+  }
   return (
     <React.Fragment>
       {showFullPageLoader && <CustomLoader />}
-      <MainContainer>
-        <HeadingBox>
-          <Heading>
-            <Text tid="account-text" />
-          </Heading>
-          <ButtonContainer>
-            <Buttons onClick={() => setConfirmPop(true)}>
-              <Text tid="deactivate-button-text" />
-            </Buttons>
-            <Buttons
-              startIcon={<AddCircle />}
+      <div>
+        <div className="section pb-0">
+          <h1 className="pageTitle">
+            <span className="pr-4"><Text tid="account-text" /></span>
+            <button
+              className="topButton float-right"
               onClick={() => setShowPurchaseOverlay(true)}
             >
-              <Text tid="purchasetest-button-text" />
-            </Buttons>
-          </ButtonContainer>
-        </HeadingBox>
-        <TypographyText>
-          <Text tid="account-subtitle-text" />
-        </TypographyText>
+              <i className="fa fa-plus-circle" /> <Text tid="purchasetest-button-text" />
+            </button>
+            <button
+              className="topButton float-right"
+              onClick={() => setConfirmPop(true)}
+            >
+              <Text tid="deactivate-button-text" />
+            </button>
+          </h1>
+          <p className="titleInfo">
+          <Text tid="account-subtitle-text" />          </p>
+        </div>
         <TableOne columns={columns} data={transactionData} />
-      </MainContainer>
+      </div>
       {confirmPop && (
         <Overlay
           title={"Are you sure?"}
-          subTitle={
-            "Are you sure you want to deactivate your account? You cannot undo this action!"
-          }
+          subTitle={"Are you sure you want to deactivate your account? You cannot undo this action!"}
           closeOverlay={() => setConfirmPop(false)}
           cancelOverlay={() => setConfirmPop(false)}
-          submitOverlay={() => {
-            handleDeactivate();
-          }}
+          submitOverlay={() => {handleDeactivate()}}
           disableBtn={disableButton}
           btnLabel={"Deactivate"}
         ></Overlay>
@@ -403,12 +363,17 @@ const Accounts = (props) => {
           }}
           showActions={false}
           wrapperClass={"mediumWrapper"}
-        ></Overlay>
+        >
+          {/* <AssigningCandidate
+            jobId={jobId}
+            handleSendInvite={handleSendInvite}
+          /> */}
+        </Overlay>
       )}
       {showPurchaseOverlay && (
         <Overlay
-          title={<Text tid="Purchase-test" />}
-          subTitle={<Text tid="Enter-qun.-to-purchase" />}
+          title={<Text tid = "Purchase-test" />}
+          subTitle={<Text tid = "Enter-qun.-to-purchase" />}
           closeOverlay={() => {
             closePurchaseOverlay();
           }}
@@ -430,52 +395,62 @@ const Accounts = (props) => {
                     return false;
 
                   return (
-                    <CustomRow>
-                      <ImageContainer>
-                        <Image src={obj?.product?.images[0]} />
-                      </ImageContainer>
-                      <ProductDetailContainer>
-                        <ProductName>{obj.product.name}</ProductName>
-                        <ProductDescription>
+                    <div
+                      className="product-row"
+                      /*onClick={() => getPrices(obj.id)}*/
+                    >
+                      <div className="image">
+                        <img src={obj?.product?.images[0]} />
+                      </div>
+                      <div className="product-info">
+                        <span className="product-name">{obj.product.name}</span>
+                        <span className="product-desc">
                           {obj.product.description}
-                        </ProductDescription>
-                        <ProductPrice>${obj.unit_amount / 100}</ProductPrice>
-                      </ProductDetailContainer>
-                      <InputContainer>
+                        </span>
+                        <span className="product-price">
+                          ${obj.unit_amount / 100}
+                        </span>
+                      </div>
+                      <div>
                         <Input
                           label={""}
                           type={"text"}
                           value={obj.qty}
                           handleInputChange={(e) => handleQtyChange(e, obj.id)}
-                          placeholder={changingLanguageText("Enter-qty.")}
+                          placeholder={changingLanguageText('Enter-qty.')}
                           key={"price-" + obj.id}
                         />
-                      </InputContainer>
-                    </CustomRow>
+                      </div>
+                    </div>
                   );
                 })}
               {qtyToPurchase > 0 && (
-                <ButtonPurchaseContainer className="product-row">
+                <div
+                  className="product-row"
+                  /*onClick={() => getPrices(obj.id)}*/
+                >
                   <Button
                     type="blue-button"
                     label={"Purchase"}
                     onClick={reviewCart}
                   />
-                </ButtonPurchaseContainer>
+                </div>
               )}
             </>
           ) : (
-            <TableContainer>
-              <Table>
-                <CustomRow sx={{ fontFamily: "Jost-Bold" }}>
-                  <CustomCell>Product Name</CustomCell>
-                  <CustomCell>Price</CustomCell>
-                  <CustomCell>Qty</CustomCell>
-                  <CustomCell>Total</CustomCell>
-                </CustomRow>
-                {selectedProduct == "" && stripeProducts?.length > 0 && (
+              <div className="product-review-container">
+            
+              <div className="product-row header">
+                <div>Product Name</div>
+                <div>Price</div>
+                <div>Qty</div>
+                <div>Total</div>
+              </div>
+              {selectedProduct == "" &&
+                stripeProducts?.length > 0 &&
                   <>
-                    {stripeProducts.map((obj, idx) => {
+                    {
+                      stripeProducts.map((obj, idx) => {
                       if (
                         obj.unit_amount == 0 ||
                         obj.unit_amount == null ||
@@ -485,28 +460,29 @@ const Accounts = (props) => {
 
                       return (
                         <>
-                          <CustomRow>
-                            <CustomCell>{obj.product.name}</CustomCell>
-                            <CustomCell>${obj.unit_amount / 100}</CustomCell>
-                            <CustomCell>{obj.qty}</CustomCell>
-                            <CustomCell>
-                              ${(obj.unit_amount / 100) * obj.qty}
-                            </CustomCell>
-                          </CustomRow>
+                          <div
+                            className="product-row"
+                            /*onClick={() => getPrices(obj.id)}*/
+                          >
+                            <div>{obj.product.name}</div>
+                            <div>${obj.unit_amount / 100}</div>
+                            <div>{obj.qty}</div>
+                            <div>${(obj.unit_amount / 100) * obj.qty}</div>
+                          </div>
                         </>
                       );
-                    })}
-                  </>
-                )}
-              </Table>
-              <ButtonPurchaseContainer>
-                <Button
-                  type="blue-button"
-                  label={"Purchase"}
-                  onClick={checkout}
-                />
-              </ButtonPurchaseContainer>
-            </TableContainer>
+                      })
+                  }
+                  <div className="product-row footer">
+                    <Button
+                      type="blue-button"
+                      label={"Purchase"}
+                      onClick={checkout}
+                    />
+                  </div>
+                </>
+              }
+            </div>
           )}
         </Overlay>
       )}
