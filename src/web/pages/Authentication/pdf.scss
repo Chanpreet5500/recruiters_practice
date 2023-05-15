@@ -1,0 +1,118 @@
+.GeneratePdf {
+
+    .pdf-table{
+        border-collapse: separate;
+        margin-top: 47px;
+        padding: 68px 43px;
+    }
+    
+    .firstTable {
+        width: 100%;
+        background-color: #181834 !important;
+        -webkit-print-color-adjust: exact;
+        height: 98px;
+        border-spacing: 30px;
+        font-family: "Jost", arial;
+        td {
+            padding: 0px 20px;
+        }
+    }
+    
+    .secondTable {
+        width: 100%;
+        background-color: #ffffff;
+        height: 98px;
+        padding: 0px 39px;
+        border-spacing: 30px;
+        font-family: "Jost", arial;
+        td {
+            padding: 0px 20px;
+        }
+    }
+    .thirdTable {
+        width: 100%;
+        background-color: #3E3470;
+        padding: 0px 39px;
+        font-family: "Jost", arial;
+        td {
+            padding: 0px 20px;
+        }
+    }
+    
+    .main-background{
+        background-color: #3E3470;
+    }
+    .fourthTable {
+        width: 100%;
+        background-color: #3E3470;
+        padding: 40px 44px;
+        font-family: "Jost", arial;
+        
+        td {
+            padding: 11px 40px;
+        }
+        .fourthInnerTable {
+            width: 100%;
+            background-color: #ffffff;
+            min-height: 500px;
+            height: auto;
+            font-family: "Jost", arial;
+            margin-top: 26px;
+            border-radius: 34px;
+            -webkit-border-radius: 34px;
+            td {
+                padding: 61px 90px 50px;
+            }
+            .fourthInnerRight {
+                width: 100%;
+                height: 492px;
+                border: 1px solid #01979C;
+                float: right;
+                border-radius: 21px;
+                
+                -webkit-border-radius: 21px;
+            }
+        }
+    }
+    
+    .firstRow{
+        display: flex;
+        justify-content: space-around;
+      
+    }
+    
+    .borderDiv{
+    
+        border: 1px solid blue;
+        height: 90%;
+        border-radius: 18px;
+        width: 96%;
+        margin: 20px;
+    
+    }
+    
+    .blockSecond{
+        display: flex;
+        justify-content: space-around;
+    }
+    .headingMainStyle{
+        color: #5B5BA1;
+        font-size: 40px;
+        line-height: 69px;
+        font-weight: 500;
+        font-style: italic;
+        padding: 28px 0px 43px;
+        margin-top: 28px;
+        margin: 0px;
+    }
+    
+    .headingStyle{
+        color: #5B5BA1;
+        font-size: 40px;
+        line-height: 69px;
+        font-weight: 500;
+        font-style: italic;
+        padding: 28px 76px 40px 15px;
+        margin: 0px;
+    }
+}
