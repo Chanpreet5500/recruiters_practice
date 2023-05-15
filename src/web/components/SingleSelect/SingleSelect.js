@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 const SingleSelect = (props) => {
-  
+  console.log(props)
   const [showOptions, setShowOptions] = useState(false); 
   const [showOverlay, setShowOverlay] = useState(false);
 
