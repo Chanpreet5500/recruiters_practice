@@ -1,31 +1,39 @@
-import React from 'react';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { ErrorMessageBox, IconBox, InputBoxMain, InputTextField, TypographyLabel, TypographySpan } from './inputStyled';
-import { Box, TextField, Typography } from '@mui/material';
-
+import React from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import {
+  ErrorMessageBox,
+  IconBox,
+  InputBoxMain,
+  InputTextField,
+  TypographyLabel,
+  TypographySpan,
+} from "./InputStyled";
+import { Box, TextField, Typography } from "@mui/material";
 
 const Input = (props) => {
   return (
     <React.Fragment>
-      <InputBoxMain >
-        <TypographyLabel >{props.label}</TypographyLabel>
+      <InputBoxMain>
+        <TypographyLabel>{props.label}</TypographyLabel>
 
-        <Box sx={{ position: 'relative', width: '100%' }}>
+        <Box sx={{ position: "relative", width: "100%" }}>
           <InputTextField
             // disableUnderline={true}
             type={props.type}
-           
-            
             sx={{
-              ".MuiInputBase-input":{
-                border:props.error? '2px solid #ed6363':'' ,
-                borderRadius:"8px !important"
-              }
+              ".MuiInputBase-input": {
+                border: props.error ? "2px solid #ed6363" : "",
+                borderRadius: "8px !important",
+              },
             }}
             name={props.name}
             value={props.value}
             onChange={(e) => props.handleInputChange(e)}
-            onKeyPress={(e) => props.handleInputKeyPress ? props.handleInputKeyPress(e) : () => { }}
+            onKeyPress={(e) =>
+              props.handleInputKeyPress
+                ? props.handleInputKeyPress(e)
+                : () => {}
+            }
             onFocus={props.handleInputFocus}
             onBlur={props.handleInputBlur}
             placeholder={props.placeholder}
@@ -33,21 +41,24 @@ const Input = (props) => {
             // autocomplete={props.autoComplete ? props.autoComplete : true}
             key={props.key}
           />
-          {
-            props.showIcon &&
+          {props.showIcon && (
             <IconBox onClick={() => props.iconClickHandler()}>
-              {props.iconName == 'fa-eye' && <FaEye />}
+              {props.iconName == "fa-eye" && <FaEye />}
 
-              {props.iconName == 'fa-eye-slash' && <FaEyeSlash />}
+              {props.iconName == "fa-eye-slash" && <FaEyeSlash />}
             </IconBox>
-          }
+          )}
 
-          {props.error &&
-            <ErrorMessageBox >
+          {props.error && (
+            <ErrorMessageBox>
               <TypographySpan>!</TypographySpan>
-              <Typography sx={{ paddingTop: '4px' ,fontSize:'12px !important'}}>{props.errorMessage}</Typography>
+              <Typography
+                sx={{ paddingTop: "4px", fontSize: "12px !important" }}
+              >
+                {props.errorMessage}
+              </Typography>
             </ErrorMessageBox>
-          }
+          )}
           {props.children}
         </Box>
       </InputBoxMain>
@@ -57,15 +68,8 @@ const Input = (props) => {
 
 export default React.memo(Input);
 
-
-
-
-
-
-
 // import React, { useState, useEffect } from 'react';
 // import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
 
 // const Input = (props) => {
 

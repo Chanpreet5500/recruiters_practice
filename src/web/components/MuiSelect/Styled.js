@@ -41,13 +41,13 @@ export const TypographyErrorSpan = styled(Typography)(({ theme }) => ({
 
 export const SelectBarSingleSelect = styled(Select)(({ theme }) => ({
   height: "48px",
-  width: "450px",
   background: "white",
+  width: "100%",
   color: "#0c0058",
   borderRadius: "8px",
   boxShadow: "0 2px 18px 0 rgba(0, 0, 0, 0.08)",
   paddingRight: "35px",
-  padding: "15px",
+  padding: "25px",
 }));
 
 export const TypographySelectLabel = styled(Typography)(({ theme }) => ({

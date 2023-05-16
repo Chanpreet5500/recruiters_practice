@@ -65,6 +65,7 @@ import {
 } from "./AccountsStyled";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import { AddCircle } from "@mui/icons-material";
+import Datagrid from "../components/DataGrid/Datagrid";
 const Accounts = (props) => {
   const history = useHistory();
   let newRef = useRef(null);
@@ -164,12 +165,29 @@ const Accounts = (props) => {
     //getStripeProducts();
   }, []);
 
+  // useEffect(() => {
+  //   if (transactions) {
+  //     setTransactionData(transactions);
+  //   }
+  // }, [transactions]);
+
   useEffect(() => {
+    const show = [];
     if (transactions) {
-      setTransactionData(transactions);
+      transactions.filter((e) => {
+        return show.push({
+          id: e.user_id,
+          test: e.tests_purchased,
+          date: e.date_updated,
+          amount: "$" + (e.total_amount / 100).toFixed(2),
+          status: e.status.toUpperCase(),
+        });
+      });
+      setTransactionData(show);
     }
   }, [transactions]);
 
+  console.log(transactions, "Data");
   useEffect(() => {
     if (products) {
       setStripeProducts(products);
@@ -303,34 +321,90 @@ const Accounts = (props) => {
 
   const columns = [
     {
-      name: <Text tid="table-testpurchades-text" />,
-      sortable: false,
+      field: "test",
+      headerClassName: "bg-color",
+      headerName: <Text tid="table-testpurchades-text" />,
+      // minWidth: 60,
+      flex: 1,
+      resizable: false,
+      // maxWidth: 100,
+      // sortable: false,
       cell: (data) => {
         return data.tests_purchased;
       },
     },
     {
       name: <Text tid="table-date-text" />,
+      field: "date",
+      headerClassName: "bg-color",
+      headerName: <Text tid="table-date-text" />,
       sortable: false,
-      cell: (data) => {
-        return data.date_created;
-      },
+      flex: 1,
+      // minWidth: 60,
+      // maxWidth: 100,
+      // cell: (data) => {
+      //   return data.date_created;
+      // },
     },
     {
       name: <Text tid="table-amount-text" />,
+      field: "amount",
+      headerClassName: "bg-color",
+      headerName: <Text tid="table-amount-text" />,
       sortable: false,
+      flex: 1,
+      // minWidth: 60,
+      // maxWidth: 100,
       cell: (data) => {
         return "$" + (data.total_amount / 100).toFixed(2);
       },
     },
     {
       name: <Text tid="table-status-text" />,
+      field: "status",
+      headerClassName: "bg-color",
+      headerName: <Text tid="table-status-text" />,
       sortable: false,
+      flex: 1,
+      // minWidth: 80,
+      // width: 150,
+      // maxWidth:200,
       cell: (data) => {
         return data.status.toUpperCase();
       },
     },
   ];
+
+  // const columns = [
+  //   {
+  //     name: <Text tid="table-testpurchades-text" />,
+  //     sortable: false,
+  //     cell: (data) => {
+  //       return data.tests_purchased;
+  //     },
+  //   },
+  //   {
+  //     name: <Text tid="table-date-text" />,
+  //     sortable: false,
+  //     cell: (data) => {
+  //       return data.date_created;
+  //     },
+  //   },
+  //   {
+  //     name: <Text tid="table-amount-text" />,
+  //     sortable: false,
+  //     cell: (data) => {
+  //       return "$" + (data.total_amount / 100).toFixed(2);
+  //     },
+  //   },
+  //   {
+  //     name: <Text tid="table-status-text" />,
+  //     sortable: false,
+  //     cell: (data) => {
+  //       return data.status.toUpperCase();
+  //     },
+  //   },
+  // ];
 
   const handleDeactivate = async () => {
     let res = await deactivateAccount({ id: clientId });
@@ -368,7 +442,29 @@ const Accounts = (props) => {
         <TypographyText>
           <Text tid="account-subtitle-text" />
         </TypographyText>
-        <TableOne columns={columns} data={transactionData} />
+        <Box sx={{ width: '85%'}}>
+        <Datagrid
+          sx={{
+            border: "none",
+            backgroundColor: "#fff",
+            fontSize: "16px",
+            fontFamily: "Jost-Regular",
+            display: "flex",
+            justifyContent: "center",
+            "& .bg-color": {
+              color: "#fff",
+              backgroundColor: "#91c6c8",
+              fontSize: "20px",
+              fontFamily: "Jost-Regular",
+            },
+            "& .css-10jrc7n-MuiDataGrid-root .MuiDataGrid-withBorderColor":{
+              justifyContent: "center",
+            }
+          }}
+          columns={columns}
+          data={transactionData ? transactionData : []}
+        />
+        </Box>
       </MainContainer>
       {confirmPop && (
         <Overlay
@@ -455,7 +551,7 @@ const Accounts = (props) => {
                   );
                 })}
               {qtyToPurchase > 0 && (
-                <ButtonPurchaseContainer className="product-row">
+                <ButtonPurchaseContainer >
                   <Button
                     type="blue-button"
                     label={"Purchase"}

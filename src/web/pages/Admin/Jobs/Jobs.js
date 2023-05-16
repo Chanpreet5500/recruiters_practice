@@ -242,6 +242,7 @@ const Jobs = (props) => {
 
   useEffect(() => {
     let show = [];
+    console.log(jobsData,'Table Data')
     jobsData.filter((e) => {
       return show.push({
         id: e._id,
@@ -355,33 +356,33 @@ const Jobs = (props) => {
     {
       field: "name",
       headerName: "Name",
-      width: 360,
       headerClassName: "backgroundColor",
+      width:160,
     },
     {
       field: "organisationUnit",
       headerName: "Organisation Unit",
-      width: 360,
       headerClassName: "backgroundColor",
+      width:160,
     },
     {
       field: "education",
       headerName: "Education",
-      width: 360,
       headerClassName: "backgroundColor",
+      width:160,
     },
     {
       field: "jobId",
       headerName: "Job ID",
-      width: 360,
       headerClassName: "backgroundColor",
+      width:160,
     },
     {
       field: "Action",
       headerName: "Action",
       headerClassName: "backgroundColor",
-      width: 302,
       sortable: false,
+      width:360,
       renderCell: (data) => (
         <>
           <Button
@@ -481,7 +482,6 @@ const Jobs = (props) => {
             sx={{
               border: "none",
               backgroundColor: "#fff",
-              fontSize: "18px",
             }}
             data={reusableData ? reusableData : []}
             columns={columns}

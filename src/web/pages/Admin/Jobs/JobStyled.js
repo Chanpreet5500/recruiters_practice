@@ -128,6 +128,7 @@ export const UserImageOuter = styled(Box)(({ theme }) => ({
 
 export const SaveButton = styled(Button)(({ theme }) => ({
   background: "#91c6c8 !important",
+  borderRadius:"20px",
   float: "right",
   color: "#fff",
   fontFamily: "Jost-Regular !important",
@@ -217,10 +218,9 @@ export const EducationLevel = styled(Select)(({ theme }) => ({
 }));
 
 export const AutocompleteCity = styled(Autocomplete)(({ theme }) => ({
-  width: "300px",
+  width: "100%",
   background: "#FFF",
   borderRadius: "8px",
-  width: "450px",
 }));
 
 export const ColSm5 = styled(Box)(({ theme }) => ({

@@ -97,6 +97,7 @@ export const ButtonPurchaseContainer = styled(Box)(({ theme }) => ({
   width: "100%",
   padding: "5px 10px",
   // background: "#fff",
+  // backgroundColor:"#0c0058",
   borderRadius: "4px",
   fontSize: "1rem",
   color: "#0c0058",
