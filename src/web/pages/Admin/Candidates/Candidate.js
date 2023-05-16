@@ -149,6 +149,7 @@ const Candidates = (props) => {
   const changeCandidateStatus = async (candidateId, status) => {
     setShowFullPageLoader(true);
     await changeStatus({ candidateId,clientId, status });
+
     setShowFullPageLoader(false);
   };
   const deleteCandidateCall = async (candidateId) => {
@@ -186,7 +187,7 @@ const Candidates = (props) => {
       "SampleCSV.csv", "sample_CSV"
     );
   }
-
+console.log(candidatesData,'jdhfjksdhfkjsdfkljldksf')
   const columns = [
     {
       name: <div>
