@@ -128,6 +128,7 @@ export const UserImageOuter = styled(Box)(({ theme }) => ({
 
 export const SaveButton = styled(Button)(({ theme }) => ({
   background: "#91c6c8 !important",
+  borderRadius: "20px",
   float: "right",
   color: "#fff",
   fontFamily: "Jost-Regular !important",
@@ -237,7 +238,7 @@ export const FormTitleRight = styled(Box)(({ theme }) => ({
 export const ColLg12 = styled(Box)(({ theme }) => ({
   flex: " 0 0 100%",
   maxWidth: "100%",
-  padding: "25px"
+  padding: "25px",
 }));
 
 export const ProductRow = styled(Box)(({ theme }) => ({
@@ -251,5 +252,5 @@ export const ProductRow = styled(Box)(({ theme }) => ({
   display: "flex",
   alignContent: "center",
   justifyContent: "space-around",
-  cursor: "pointer"
-}))
+  cursor: "pointer",
+}));

@@ -8,7 +8,7 @@ import {
   TypographyLabel,
   TypographySpan,
 } from "./InputStyled";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Input = (props) => {
   return (
@@ -30,8 +30,8 @@ const Input = (props) => {
             //   },
             // }}
             sx={{
-              ".MuiInputBase-input":{
-                border:props.error? '2px solid #ed6363':'' 
+              ".MuiInputBase-input": {
+                border: props.error ? "2px solid #ed6363" : "",
               },
             }}
             // sx={props.error ? { border: "1px solid #ed6363" } : ""}
