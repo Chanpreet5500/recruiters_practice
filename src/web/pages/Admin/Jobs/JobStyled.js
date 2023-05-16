@@ -128,7 +128,7 @@ export const UserImageOuter = styled(Box)(({ theme }) => ({
 
 export const SaveButton = styled(Button)(({ theme }) => ({
   background: "#91c6c8 !important",
-  borderRadius:"20px",
+  borderRadius: "20px",
   float: "right",
   color: "#fff",
   fontFamily: "Jost-Regular !important",
@@ -155,8 +155,6 @@ export const SpinnerBorder = styled(Button)(({ theme }) => ({
 export const ManageJobsRow = styled(Box)(({ theme }) => ({
   display: "flex",
   flexWrap: "wrap",
-  marginRight: "-15px",
-  marginLeft: "-15px",
 }));
 
 export const ColSm7 = styled(Box)(({ theme }) => ({
@@ -195,6 +193,7 @@ export const FormTitle = styled(Typography)(({ theme }) => ({
 export const ColLg6 = styled(Box)(({ theme }) => ({
   flex: "0 0 50%",
   maxWidth: "50%",
+  padding: "0.8em",
 }));
 
 export const Label = styled(Typography)(({ theme }) => ({
@@ -218,9 +217,9 @@ export const EducationLevel = styled(Select)(({ theme }) => ({
 }));
 
 export const AutocompleteCity = styled(Autocomplete)(({ theme }) => ({
-  width: "100%",
   background: "#FFF",
   borderRadius: "8px",
+  width: "100%",
 }));
 
 export const ColSm5 = styled(Box)(({ theme }) => ({
@@ -239,6 +238,7 @@ export const FormTitleRight = styled(Box)(({ theme }) => ({
 export const ColLg12 = styled(Box)(({ theme }) => ({
   flex: " 0 0 100%",
   maxWidth: "100%",
+  padding: "25px",
 }));
 
 export const ProductRow = styled(Box)(({ theme }) => ({
@@ -252,5 +252,5 @@ export const ProductRow = styled(Box)(({ theme }) => ({
   display: "flex",
   alignContent: "center",
   justifyContent: "space-around",
-  cursor: "pointer"
-}))
+  cursor: "pointer",
+}));
