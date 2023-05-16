@@ -355,32 +355,33 @@ const Jobs = (props) => {
     {
       field: "name",
       headerName: "Name",
-      width: 360,
+      flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "organisationUnit",
       headerName: "Organisation Unit",
-      width: 360,
+      flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "education",
       headerName: "Education",
-      width: 360,
+      flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "jobId",
       headerName: "Job ID",
-      width: 360,
+      flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "Action",
       headerName: "Action",
       headerClassName: "backgroundColor",
-      width: 302,
+      flex: 1,
+      minWidth: 280,
       sortable: false,
       renderCell: (data) => (
         <>

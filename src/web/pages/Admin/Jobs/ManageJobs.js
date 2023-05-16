@@ -453,7 +453,6 @@ const ManageJobs = (props) => {
                   id="combo-box-demo"
                   options={ALL_COUNTRIES}
                   onChange={handleChange}
-                  sx={{ width: 300 }}
                   renderInput={(params) => <TextField {...params} />}
                 />
               </Box>
@@ -477,8 +476,8 @@ const ManageJobs = (props) => {
               <Text tid="add-parameter-text" />
             </Box>
           </FormTitleRight>
-          <ManageJobsRow className="row parameters-row">
-            <ColLg12 className="col-lg-12">
+          <ManageJobsRow>
+            <ColLg12>
               <SingleSelect
                 label={<Text tid="parameters-text" />}
                 placeholder={<Text tid="parameters-text" />}
@@ -500,7 +499,7 @@ const ManageJobs = (props) => {
             )}
           </ManageJobsRow>
         </ColSm5>
-        <div className="col-sm-1 dividerOuter"></div>
+        {/* <div className="col-sm-1 dividerOuter"></div> */}
       </ManageJobsRow>
 
       {showDelete && (

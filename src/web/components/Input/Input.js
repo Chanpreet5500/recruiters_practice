@@ -32,7 +32,7 @@ const Input = (props) => {
             sx={{
               ".MuiInputBase-input":{
                 border:props.error? '2px solid #ed6363':'' 
-              }
+              },
             }}
             // sx={props.error ? { border: "1px solid #ed6363" } : ""}
             // className={props.error ? "fieldInput error" : "fieldInput"}
