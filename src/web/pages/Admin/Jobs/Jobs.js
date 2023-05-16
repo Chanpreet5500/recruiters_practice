@@ -357,32 +357,32 @@ const Jobs = (props) => {
       field: "name",
       headerName: "Name",
       headerClassName: "backgroundColor",
-      width:160,
+      flex:1,
     },
     {
       field: "organisationUnit",
       headerName: "Organisation Unit",
       headerClassName: "backgroundColor",
-      width:160,
+      flex:1,
     },
     {
       field: "education",
       headerName: "Education",
       headerClassName: "backgroundColor",
-      width:160,
+      flex:1,
     },
     {
       field: "jobId",
       headerName: "Job ID",
       headerClassName: "backgroundColor",
-      width:160,
+      flex:1,
     },
     {
       field: "Action",
       headerName: "Action",
       headerClassName: "backgroundColor",
       sortable: false,
-      width:360,
+      flex:1,
       renderCell: (data) => (
         <>
           <Button

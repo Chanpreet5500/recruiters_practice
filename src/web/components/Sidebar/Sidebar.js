@@ -100,6 +100,7 @@ const Sidebar = (props) => {
   const [hideLeftSection, setHideLeftSection] = useState(
     localStorage.getItem("leftSection") == "true" ? true : false
   );
+
   const [menu, setMenu] = useState("");
   const [loggedInUser, setLoggedInUser] = useState({});
   const [showProfileMenu, setShowProfileMenu] = useState(false);

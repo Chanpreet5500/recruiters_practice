@@ -53,7 +53,7 @@ export const ErrorMessageBox = styled(Box)(({ theme }) => ({
 export const InputTextField = styled(TextField)(({ theme }) => ({
   height: "48px",
   width:'100%',
-  padding: "10px",
+  // padding: "10px",
   color: "#0c0058",
   input: {
     background: "#ffffff !important",
