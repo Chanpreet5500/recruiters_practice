@@ -1,5 +1,5 @@
-import { styled } from '@mui/material'
-import { Box, MenuItem, Select, Typography } from '@mui/material'
+import { styled } from "@mui/material";
+import { Box, MenuItem, Select, Typography } from "@mui/material";
 
 export const MenuOptions = styled(MenuItem)(({ theme }) => ({
   display: "block",
@@ -41,7 +41,7 @@ export const TypographyErrorSpan = styled(Typography)(({ theme }) => ({
 
 export const SelectBarSingleSelect = styled(Select)(({ theme }) => ({
   height: "48px",
-  width: "450px",
+  width: "100%",
   background: "white",
   color: "#0c0058",
   borderRadius: "8px",
