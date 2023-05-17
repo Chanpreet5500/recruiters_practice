@@ -3,6 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Box } from "@mui/material";
 
 const Datagrid = (props) => {
+  console.log(props);
   return (
     <Box>
       <DataGrid sx={props.sx} rows={props.data} columns={props.columns} />

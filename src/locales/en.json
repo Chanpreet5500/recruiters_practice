@@ -279,6 +279,10 @@
   "organization_text": "Organization",
   "desired_text": "Desired",
   "obtain_text": "Obtained",
+  "organization_unit" : "Organization Unit",
+  "education" : "Education",
+  "JobID" : "Job ID",
+  "Action" : "Action",
 
 
   "emotional": {

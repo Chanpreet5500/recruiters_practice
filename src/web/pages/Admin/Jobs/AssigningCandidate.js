@@ -26,6 +26,7 @@ import {
   ERROR_INVALID_PHONE,
 } from "recruitment-message";
 import { ALL_COUNTRIES } from "recruitment-countries";
+import Datagrid from "../../../components/DataGrid/Datagrid";
 
 const AssigningCandidate = (props) => {
   const history = useHistory();
@@ -61,18 +62,42 @@ const AssigningCandidate = (props) => {
     init();
   }, []);
 
+  let filteredCandidateData = [];
+  candidateData.filter((e) => {
+    return filteredCandidateData.push({
+      id: e._id,
+      name: e.first_name + " " + e.last_name,
+      email: e.email,
+    });
+  });
+
   const columns = [
     {
-      name: <Text tid="invite-name-text"/>,
+      name: <Text tid="invite-name-text" />,
       sortable: false,
       cell: (data) => data.first_name + " " + data.last_name,
       // cell: (data) => data.experience,
     },
     {
-      name:  <Text tid="invite-email-text"/>,
+      name: <Text tid="invite-email-text" />,
       sortable: false,
       cell: (data) => data.email,
       // cell: (data) => data.experience,
+    },
+  ];
+
+  const finalColumns = [
+    {
+      field: "name",
+      headerName: <Text tid="invite-name-text" />,
+      sortable: false,
+      cell: (data) => data.first_name + " " + data.last_name,
+    },
+    {
+      field: "email",
+      headername: <Text tid="invite-email-text" />,
+      sortable: false,
+      cell: (data) => data.email,
     },
   ];
 
@@ -81,24 +106,30 @@ const AssigningCandidate = (props) => {
     setSelectedCandidates(selectedRows);
   };
 
+  console.log(candidateData, "candidate data from assigning candidate");
+
   return (
     <React.Fragment>
       {showFullPageLoader && <CustomLoader />}
       {!isCustomText ? (
-        <TableOne
-          columns={columns}
-          data={candidateData}
-          selectableRows={true}
-          onSelectedRowsChange={handleSelectedData}
-          perPage={5}
-        />
+        <>
+          <TableOne
+            columns={columns}
+            data={candidateData}
+            selectableRows={true}
+            onSelectedRowsChange={handleSelectedData}
+            perPage={5}
+          />
+        </>
       ) : (
         <>
           <div className="row">
             <div className="col-md-12">
               <div>
-                <label className="fieldLabel invite-label"><Text tid="add-invite-text" /></label>
-                <div className={'formField'}>
+                <label className="fieldLabel invite-label">
+                  <Text tid="add-invite-text" />
+                </label>
+                <div className={"formField"}>
                   <Textarea
                     label={""}
                     type={"text"}

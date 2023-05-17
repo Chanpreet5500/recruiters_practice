@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import validator from "validator";
 import { validateEmail } from "recruitment-utils/Validators.js";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { apiDateFormat } from "recruitment-utils/Service.js";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import Overlay from "recruitment-components/Overlay/Overlay.js";
@@ -16,7 +16,6 @@ import CustomDatepicker from "recruitment-components/CustomDatepicker/CustomDate
 import CustomMobile from "recruitment-components/CustomMobile/CustomMobile.js";
 import Textarea from "recruitment-components/Textarea/Textarea.js";
 import Button from "recruitment-components/Button/Button.js";
-// import SingleSelect from "recruitment-components/SingleSelect/SingleSelect.js";
 import Multiselect from "recruitment-components/MultiSelectDropDown/MultiSelectDropDown.js";
 import { FaEdit, FaTrashAlt, FaLock, FaLockOpen } from "react-icons/fa";
 
@@ -37,28 +36,23 @@ import { ALL_COUNTRIES } from "recruitment-countries";
 import { changingLanguageText } from "../../../../lib/utils/Service.js";
 import {
   Box,
-  FormControl,
-  MenuItem,
   Typography,
   TextField,
 } from "@mui/material";
 import {
   ManageJobsRow,
   PageTitle,
-  UserImageOuter,
   ColSm7,
   FormTitle,
   ColLg6,
-  OrganisationUnitSelect,
-  Label,
-  ColMd6,
-  EducationLevel,
   SaveButton,
   AutocompleteCity,
   ColSm5,
   FormTitleRight,
   ColLg12,
+  GoBack
 } from "./JobStyled.js";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const ManageJobs = (props) => {
   const { userLanguage } = useContext(LanguageContext);
@@ -98,7 +92,6 @@ const ManageJobs = (props) => {
   const [email, setEmailAddress] = useState("");
   const [education, setEducation] = useState("");
   const [jobType, setJobType] = useState("sales");
-  // const [jobType, setJobType] = useState();
   const [profession, setProfession] = useState("");
   const [jobId, setJobId] = useState(JOB_ID);
   const [city, setCity] = useState("");
@@ -119,7 +112,6 @@ const ManageJobs = (props) => {
   const [esData, setEsData] = useState([]);
   const [phoneWithCountryCode, setPhoneWithCountryCode] = useState("");
 
-  //params overlay
   const [showParamsToAdd, setShowParamsToAdd] = useState(false);
 
   const educationData = [
@@ -272,10 +264,8 @@ const ManageJobs = (props) => {
     setPhoneNumber(b);
   };
 
-  //working on it
   const addParams = (id) => {
     if (id == "create") {
-      //here set ovevrlay to true
       setShowParamsToAdd(true);
       return false;
     }
@@ -373,9 +363,9 @@ const ManageJobs = (props) => {
     <React.Fragment>
       {showFullPageLoader && <CustomLoader />}
 
-      <Link to="/jobs" className="goBack backToClass">
-        <i className="uil uil-arrow-left" /> <Text tid="back-to-jobs-text" />
-      </Link>
+      <GoBack to="/jobs">
+        <ArrowBackIcon /> <Text tid="back-to-jobs-text" />
+      </GoBack>
       {
         <PageTitle>
           <SaveButton
@@ -395,7 +385,7 @@ const ManageJobs = (props) => {
 
       <ManageJobsRow>
         <ColSm7>
-          <FormTitle className="formTitle">
+          <FormTitle>
             <Box component="span">
               <Text tid="job-details-text" />
             </Box>
@@ -408,14 +398,14 @@ const ManageJobs = (props) => {
                 value={jobname}
                 handleInputChange={(e) => setJobname(e.target.value)}
                 error={jobNameError}
-                placeholder={changingLanguageText("job-name-text")} // shows object
+                placeholder={changingLanguageText("job-name-text")} 
                 errorMessage={FIRSTNAME_ERROR_MESSAGE}
               />
             </ColLg6>
             <ColLg6>
               <SingleSelect
                 label={<Text tid="organisation-unit-text" />}
-                placeholder={<Text tid="organisation-unit-text" />} //works fine
+                placeholder={<Text tid="organisation-unit-text" />}
                 options={organisationUnit ? organisationUnit : []}
                 changeOption={(id) => setJobType(id)}
                 value={jobType}
@@ -448,7 +438,7 @@ const ManageJobs = (props) => {
           <ManageJobsRow>
             <ColLg6>
               <Box>
-                <Typography sx={{ color: "#fff" }}>Country</Typography>
+                <Typography sx={{ color: "#fff", marginBottom: "6px" }}>{<Text tid="country-text"/>}</Typography>
                 <AutocompleteCity
                   id="combo-box-demo"
                   options={ALL_COUNTRIES}
@@ -464,7 +454,7 @@ const ManageJobs = (props) => {
                 value={city}
                 handleInputChange={(e) => setCity(e.target.value)}
                 error={cityError}
-                placeholder={changingLanguageText("city-text")} // shows object
+                placeholder={changingLanguageText("city-text")}
                 errorMessage={"City is required"}
               />
             </ColLg6>

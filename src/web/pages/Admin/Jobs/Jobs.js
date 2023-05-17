@@ -15,6 +15,7 @@ import Input from "recruitment-components/Input/Input.js";
 import AssigningCandidate from "./AssigningCandidate.js";
 import { Text } from "../../../../context/provider.js";
 import { changingLanguageText } from "../../../../lib/utils/Service.js";
+import ReactDomServer from "react-dom/server";
 // import { components, Select } from "react-select";
 import Select from "react-select";
 import {
@@ -26,6 +27,11 @@ import {
   SearchText,
   SearchJobInput,
   ProductRow,
+  ProductDesc,
+  ProductName,
+  ProductInfo,
+  ProductPrice,
+  PurchaseButton,
 } from "./JobStyled.js";
 import AddIcon from "@mui/icons-material/Add";
 import LockIcon from "@mui/icons-material/Lock";
@@ -99,6 +105,7 @@ const Jobs = (props) => {
   const [pricesData, setPricesData] = useState([]);
 
   const [comparedSkillsWithJobs, setComparedSkillsWithJobs] = useState([]);
+  const [tableCheckoutData, setTableCheckoutData] = useState([]);
 
   const products = useStoreState((state) => state.admin.products);
   const productPrices = useStoreState((state) => state.admin.productPrices);
@@ -137,8 +144,6 @@ const Jobs = (props) => {
 
   const [searchText, setSearchText] = useState("");
   const [showFullPageLoader, setShowFullPageLoader] = useState(false);
-
-  //Darg and Drop constants
 
   // const skillsvalues = getAllSkills.map(e => e)
 
@@ -198,7 +203,6 @@ const Jobs = (props) => {
   }, [candidates]);
 
   const changeJobStatus = async (jobId, status) => {
-    // console.log(jobId, status, 'from changeJobStatus')
     setShowFullPageLoader(true);
 
     await jobChangeStatus({ jobId, status, clientId });
@@ -252,6 +256,7 @@ const Jobs = (props) => {
         status: e.status,
       });
     });
+    console.log(show, "show");
     setReusableData(show);
   }, [jobsData]);
 
@@ -354,31 +359,31 @@ const Jobs = (props) => {
   const columns = [
     {
       field: "name",
-      headerName: "Name",
+      headerName: <Text tid="job-name-text" />,
       flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "organisationUnit",
-      headerName: "Organisation Unit",
+      headerName: <Text tid="organization_unit" />,
       flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "education",
-      headerName: "Education",
+      headerName: <Text tid="education"/>,
       flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "jobId",
-      headerName: "Job ID",
+      headerName: <Text tid="JobID"/>,
       flex: 1,
       headerClassName: "backgroundColor",
     },
     {
       field: "Action",
-      headerName: "Action",
+      headerName: <Text tid="Action"/>,
       headerClassName: "backgroundColor",
       flex: 1,
       minWidth: 280,
@@ -429,6 +434,53 @@ const Jobs = (props) => {
       ),
     },
   ];
+
+  const price = ReactDomServer.renderToString(
+    <Text tid="product-price-text" />
+  );
+  console.log(price, "product price text");
+
+  const productCheckOut = [
+    {
+      field: "name",
+      headerName: <Text tid="product-name-text" />,
+      flex: 1,
+      headerClassName: "backgroundColor",
+    },
+    {
+      field: "price",
+      headerName: <Text tid="price-text" />,
+      flex: 1,
+      headerClassName: "backgroundColor",
+    },
+    {
+      field: "qty",
+      headerName: <Text tid="quantity-text" />,
+      flex: 1,
+      headerClassName: "backgroundColor",
+    },
+    {
+      field: "total",
+      headerName: <Text tid="total-text" />,
+      flex: 1,
+      headerClassName: "backgroundColor",
+    },
+  ];
+
+  let filteredProduct = [];
+  stripeProducts.filter((e) => {
+    console.log(e, "e from filter");
+    if (e.unit_amount == 0 || e.unit_amount == null || !e.qty) return false;
+    return filteredProduct.push({
+      id: e.product.id,
+      name: e.product.name,
+      price: e.unit_amount / 100,
+      qty: e.qty,
+      total: (e.unit_amount / 100) * e.qty,
+    });
+  });
+
+  console.log(filteredProduct, "filtered Data");
 
   return (
     <React.Fragment>
@@ -553,6 +605,7 @@ const Jobs = (props) => {
               {selectedProduct == "" &&
                 stripeProducts?.length > 0 &&
                 stripeProducts.map((obj, idx) => {
+                  console.log(obj, "obj from map");
                   if (obj.unit_amount == 0 || obj.unit_amount == null)
                     return false;
 
@@ -560,23 +613,23 @@ const Jobs = (props) => {
                     <ProductRow
                     /*onClick={() => getPrices(obj.id)}*/
                     >
-                      <div
-                        // component="img"
-                        className="image"
-                        // src={obj?.product?.image[0]}
-                      >
-                        <img src={obj?.product?.images[0]} />
-                      </div>
-                      <div className="product-info">
-                        <span className="product-name">{obj.product.name}</span>
-                        <span className="product-desc">
+                      <Box
+                        sx={{
+                          width: "100px",
+                        }}
+                        component="img"
+                        src={obj?.product?.images[0]}
+                      ></Box>
+                      <ProductInfo>
+                        <ProductName component="span">
+                          {obj.product.name}
+                        </ProductName>
+                        <ProductDesc component="span">
                           {obj.product.description}
-                        </span>
-                        <span className="product-price">
-                          ${obj.unit_amount / 100}
-                        </span>
-                      </div>
-                      <div>
+                        </ProductDesc>
+                        <ProductPrice>${obj.unit_amount / 100}</ProductPrice>
+                      </ProductInfo>
+                      <Box>
                         <Input
                           label={""}
                           type={"text"}
@@ -585,73 +638,68 @@ const Jobs = (props) => {
                           placeholder={changingLanguageText("Enter-qty.")}
                           key={"price-" + obj.id}
                         />
-                      </div>
+                      </Box>
                     </ProductRow>
                   );
                 })}
               {qtyToPurchase > 0 && (
-                <div
-                  className="product-row"
-                  /*onClick={() => getPrices(obj.id)}*/
+                <ProductRow
+                /*onClick={() => getPrices(obj.id)}*/
                 >
-                  <Button
+                  <PurchaseButton
                     type="blue-button"
                     label={"Purchase"}
                     onClick={reviewCart}
-                  />
-                </div>
+                  >
+                    Purchase
+                  </PurchaseButton>
+                </ProductRow>
               )}
             </>
           ) : (
-            <div className="product-review-container">
-              <div className="product-row header">
-                <div>
-                  <Text tid="product-name-text" />
-                </div>
-                <div>
-                  <Text tid="price-text" />
-                </div>
-                <div>
-                  <Text tid="quantity-text" />
-                </div>
-                <div>
-                  <Text tid="total-text" />
-                </div>
-              </div>
+            <Box 
+            sx={{
+              flexBasis: "25%",
+              justifyContent: "center",
+            }}
+            >
               {selectedProduct == "" && stripeProducts?.length > 0 && (
                 <>
-                  {stripeProducts.map((obj, idx) => {
-                    if (
-                      obj.unit_amount == 0 ||
-                      obj.unit_amount == null ||
-                      !obj.qty
-                    )
-                      return false;
-
-                    return (
-                      <>
-                        <div
-                          className="product-row"
-                          /*onClick={() => getPrices(obj.id)}*/
-                        >
-                          <div>{obj.product.name}</div>
-                          <div>${obj.unit_amount / 100}</div>
-                          <div>{obj.qty}</div>
-                          <div>${(obj.unit_amount / 100) * obj.qty}</div>
-                        </div>
-                      </>
-                    );
-                  })}
-                  <div className="product-row footer">
-                    <Button
+                  <Box
+                    sx={{
+                      "& .backgroundColor": {
+                        backgroundColor: "#91c6c8",
+                        fontSize: "20px",
+                        fontFamily: "Jost-Regular",
+                      },
+                    }}
+                  >
+                    <Datagrid
+                      sx={{
+                        border: "none",
+                        backgroundColor: "#fff",
+                        fontSize: "18px",
+                      }}
+                      data={filteredProduct ? filteredProduct : []}
+                      columns={productCheckOut}
+                    />
+                  </Box>
+                  <ProductRow
+                    sx={{
+                      background: "none",
+                    }}
+                  >
+                    <PurchaseButton
                       type="blue-button"
                       label={"Purchase"}
                       onClick={checkout}
-                    />
-                  </div>
+                    >
+                      Purchase
+                    </PurchaseButton>
+                  </ProductRow>
                 </>
               )}
-            </div>
+            </Box>
           )}
         </Overlay>
       )}

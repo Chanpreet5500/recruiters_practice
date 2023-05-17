@@ -8,6 +8,8 @@ import {
   Select,
   Autocomplete,
 } from "@mui/material";
+import { Link } from "react-router-dom";
+import { theme } from "antd";
 
 export const AddJobButton = styled(Button)(({ theme }) => ({
   float: "right",
@@ -44,12 +46,6 @@ export const JobsHeading = styled(Typography)(({ theme }) => ({
   fontSize: "36px",
   fontFamily: "Jost-Medium",
   marginBottom: "5px",
-  // span: {
-  //   borderColor: " #979797 !important",
-  //   lineHeight: "39px",
-  //   maxHeight: "32px",
-  //   display: "inline-block",
-  // },
 }));
 
 export const JobHeadingChild = styled(Typography)(({ theme }) => ({
@@ -126,6 +122,14 @@ export const UserImageOuter = styled(Box)(({ theme }) => ({
   },
 }));
 
+export const GoBack = styled(Link)(({ theme }) => ({
+  fontSize: "20px",
+  color: "#fff",
+  "&:hover": {
+    color: "#fff",
+  },
+}));
+
 export const SaveButton = styled(Button)(({ theme }) => ({
   background: "#91c6c8 !important",
   borderRadius: "20px",
@@ -139,7 +143,7 @@ export const SaveButton = styled(Button)(({ theme }) => ({
 
 export const MuiButton = styled(Button)(({ theme }) => ({
   // background: "#91c6c8",
-  color: "#fff",
+  color: "#000",
   fontFamily: "Jost-Regular",
   textTransform: "capitalize",
   fontSize: "16px",
@@ -253,4 +257,46 @@ export const ProductRow = styled(Box)(({ theme }) => ({
   alignContent: "center",
   justifyContent: "space-around",
   cursor: "pointer",
+  ' &:hover' : {
+    background: "#91c6c8",
+  }
+}));
+
+export const ProductInfo = styled(Box)(({ theme }) => ({
+  flexBasis: "70%",
+  flexDirection: "column",
+  alignItems: "flex-start",
+}));
+
+export const ProductName = styled(Box)(({ theme }) => ({
+  fontSize: "1.5rem",
+  fontWeight: 600,
+  padding: "5px",
+}));
+
+export const ProductDesc = styled(Box)(({ theme }) => ({
+  fontSize: "1rem",
+  margin: "5px",
+}));
+
+export const ProductPrice = styled(Box)(({ theme }) => ({
+  fontSize: "1.2rem",
+  paddingLeft: "5px",
+}));
+
+export const PurchaseButton = styled(Button)(({ theme }) => ({
+  background: "#0c0058",
+  fontFamily: '"Jost-Medium"',
+  height: "40px",
+  borderRadius: "50px",
+  color: "#fff",
+  border: "none",
+  fontSize: "16px",
+  display: "inline-block",
+  padding: "0 20px",
+  minWidth: "128px",
+  textTransform: "capitalize",
+  '&:hover' : {
+    background: "#0c0058",
+  }
 }));
